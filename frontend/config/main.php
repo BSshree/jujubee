@@ -84,6 +84,31 @@ return [
                     'route' => '/site/site/pages',
                     'defaults' => ['slug' => 'terms'],
                 ],
+                [
+                    'pattern' => '/web-design/<slug:>',
+                    'route' => '/site/site/pages',
+                    'defaults' => ['slug' => 'web-design'],
+                ],
+                [
+                    'pattern' => '/web/<slug:>',
+                    'route' => '/site/site/pages',
+                    'defaults' => ['slug' => 'web'],
+                ],
+                [
+                    'pattern' => '/seo/<slug:>',
+                    'route' => '/site/site/pages',
+                    'defaults' => ['slug' => 'seo'],
+                ],
+                [
+                    'pattern' => '/mobile/<slug:>',
+                    'route' => '/site/site/pages',
+                    'defaults' => ['slug' => 'mobile'],
+                ],
+                 [
+                    'pattern' => '/outsource/<slug:>',
+                    'route' => '/site/site/pages',
+                    'defaults' => ['slug' => 'outsource'],
+                ],
             ],
         ],
     ],

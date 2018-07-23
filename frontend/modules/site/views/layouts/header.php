@@ -34,11 +34,11 @@ use yii\bootstrap\Modal;
           <li class="menu__item">
             <a href="#" class="menu__link services-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Services</a>
             <div class="collapse" id="collapseExample">
-              <a class="dropdown-item" href="web-design.html">Design</a>
-              <a class="dropdown-item" href="web.html">Web</a>
-              <a class="dropdown-item" href="seo.html">Digital</a>
-              <a class="dropdown-item" href="mobile.html">Mobile</a>
-              <a class="dropdown-item" href="outsource.html">Out Sourcing</a>
+              <a class="dropdown-item" href="/web-design">Design</a>
+              <a class="dropdown-item" href="/web">Web</a>
+              <a class="dropdown-item" href="/seo">Digital</a>
+              <a class="dropdown-item" href="/mobile">Mobile</a>
+              <a class="dropdown-item" href="/outsource">Out Sourcing</a>
             </div>
           </li>
           <li class="menu__item"><a href="/work" class="menu__link">Work</a></li>

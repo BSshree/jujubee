@@ -22,25 +22,33 @@ $this->params['breadcrumbs'][] = $this->title;
     <?=
     GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+       // 'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
+                ['class' => 'yii\grid\SerialColumn'],
             'url_path:url',
-            'meta_title',
-            'meta_desc',
-            'meta_keyword',
-
-            ['class' => 'yii\grid\ActionColumn'],
+                [
+                'attribute' => 'meta_title',
+                'value' => function($data) {
+                    $dat = json_decode($data->meta_values);
+                    return $dat->meta_title;
+                },
+            ],
+                [
+                'attribute' => 'meta_desc',
+                'value' => function($data) {
+                    $dat = json_decode($data->meta_values);
+                    return $dat->meta_desc;
+                },
+            ],
+                [
+                'attribute' => 'meta_keyword',
+                'value' => function($data) {
+                    $dat = json_decode($data->meta_values);
+                    return $dat->meta_keyword;
+                },
+            ],
+                ['class' => 'yii\grid\ActionColumn'],
         ],
-//        'columns' => [
-//                ['class' => 'yii\grid\SerialColumn'],
-//                
-//            [
-//                'attribute' => 'meta_title',
-//                'value' => 'seo.meta_values',
-//            ],
-//        ],
     ]);
     ?>
 </div>

@@ -26,14 +26,13 @@ AppAssetJujubee::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<body>
+    <?php echo($this->keywords); exit; ?>
      <?php  echo $this->render('@frontend/modules/site/views/layouts/header'); ?> 
 
         <?= $content ?>
    
      <?php echo $this->render('@frontend/modules/site/views/layouts/footer'); ?> 
 
-</body>
 <?php $this->endBody() ?>
 </body>
 </html>

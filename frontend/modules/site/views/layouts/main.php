@@ -26,7 +26,7 @@ AppAssetJujubee::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-    <?php echo($this->keywords); exit; ?>
+    <?php //echo($this->keywords); exit; ?>
      <?php  echo $this->render('@frontend/modules/site/views/layouts/header'); ?> 
 
         <?= $content ?>

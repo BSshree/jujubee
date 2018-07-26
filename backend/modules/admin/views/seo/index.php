@@ -29,22 +29,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 [
                 'attribute' => 'meta_title',
                 'value' => function($data) {
-                    $dat = json_decode($data->meta_values);
-                    return $dat->meta_title;
+                    return $data->meta_title;
                 },
             ],
                 [
                 'attribute' => 'meta_desc',
                 'value' => function($data) {
-                    $dat = json_decode($data->meta_values);
-                    return $dat->meta_desc;
+                    return $data->meta_desc;
                 },
             ],
                 [
                 'attribute' => 'meta_keyword',
                 'value' => function($data) {
-                    $dat = json_decode($data->meta_values);
-                    return $dat->meta_keyword;
+                    return $data->meta_keyword;
                 },
             ],
                 ['class' => 'yii\grid\ActionColumn'],

@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * SeoController implements the CRUD actions for Seo model.
  */
-class SeoController extends BaseController {
+class SeoController extends Controller {
 
     /**
      * {@inheritdoc}
@@ -62,14 +62,7 @@ class SeoController extends BaseController {
     public function actionCreate() {
         $model = new Seo();
         if ($model->load(Yii::$app->request->post())) {
-            $post = Yii::$app->request->post();
-         
-            $meta_array = array();
-            $meta_array['meta_title'] = $post['Seo']['meta_title'];
-            $meta_array['meta_desc'] = $post['Seo']['meta_desc'];
-            $meta_array['meta_keyword'] = $post['Seo']['meta_keyword'];
-            $meta_json = json_encode($meta_array);
-            $model->meta_values = $meta_json;
+            $model->meta_values = json_encode(Yii::$app->request->post('Seo'));
 
             if ($model->save()) {
                 return $this->redirect(['index']);
@@ -91,8 +84,11 @@ class SeoController extends BaseController {
     public function actionUpdate($id) {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->seo_id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->meta_values = json_encode(Yii::$app->request->post('Seo'));
+            if($model->save()) {
+                return $this->redirect(['view', 'id' => $model->seo_id]);
+            }
         }
 
         return $this->render('update', [

@@ -16,11 +16,11 @@ class Seo extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    
+
     public $meta_title;
     public $meta_desc;
     public $meta_keyword;
-    
+
     public static function tableName()
     {
         return 'seo';
@@ -52,9 +52,24 @@ class Seo extends \yii\db\ActiveRecord
             'meta_keyword' => 'Keyword',
         ];
     }
-    
-    public function getMeta_ValuesText()
+
+    public function afterFind(){
+
+        parent::afterFind();
+        $this->meta_values = json_decode($this->meta_values, true);
+
+        $this->meta_title = $this->meta_values['meta_title'];
+        $this->meta_keyword = $this->meta_values['meta_keyword'];
+        $this->meta_desc = $this->meta_values['meta_desc'];
+    }
+
+    public static function findMetaTags($url = '*')
     {
-        return 'aaa';
+        $model = Seo::findOne(['url_path' => $url]);
+        if(null === $model){
+            $model = Seo::findOne(['url_path' => '*']);
+        }
+
+        return (object) $model->meta_values;
     }
 }

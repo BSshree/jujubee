@@ -12,6 +12,11 @@ use common\widgets\Alert;
 use frontend\assets\AppAssetJujubee;
 
 AppAssetJujubee::register($this);
+$seo = \common\models\Seo::findMetaTags(Yii::$app->request->url);
+
+$this->registerMetaTag(['name' => 'description','content' => $seo->meta_desc]);
+$this->registerMetaTag(['name' => 'keywords','content' => $seo->meta_keyword]);
+$this->title = $seo->meta_title ?: $this->title;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

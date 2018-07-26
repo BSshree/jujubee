@@ -13,7 +13,7 @@ use common\models\SignupForm;
 /**
  * Site controller
  */
-class SiteController extends BaseController
+class SiteController extends Controller
 {
     /**
      * @inheritdoc

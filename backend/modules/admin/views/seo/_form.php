@@ -27,8 +27,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'url_path')->textInput(['maxlength' => true,'class'=> 'form-control']) ?>
     <?= $form->field($model, 'meta_title')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'meta_desc')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'meta_keyword')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'meta_desc')->textarea(['maxlength' => true]) ?>
+    <?= $form->field($model, 'meta_keyword')->textarea(['maxlength' => true]) ?>
 
      <div class="form-group">
         <div class="col-sm-0 col-sm-offset-2">

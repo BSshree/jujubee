@@ -19,7 +19,7 @@ class SeoSearch extends Seo
     {
         return [
             [['seo_id'], 'integer'],
-            [['url_path', 'meta_values'], 'safe'],
+            [['url_path', 'meta_title','meta_desc','meta_keyword'], 'safe'],
         ];
     }
 
@@ -47,6 +47,7 @@ class SeoSearch extends Seo
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => array('pageSize' => 2),
         ]);
 
         $this->load($params);
@@ -60,10 +61,15 @@ class SeoSearch extends Seo
         // grid filtering conditions
         $query->andFilterWhere([
             'seo_id' => $this->seo_id,
+           // 'meta_title' => $this->meta_title,
+            //'meta_desc' => $this->meta_desc,
+           // 'meta_keyword' => $this->meta_keyword,
+            'meta_values' => $this->meta_values,
+            
         ]);
 
         $query->andFilterWhere(['like', 'url_path', $this->url_path])
-            ->andFilterWhere(['like', 'meta_values', $this->meta_values]);
+            ->andFilterWhere(['like', 'meta_values', ($this->meta_values)]);
 
         return $dataProvider;
     }

@@ -3,33 +3,23 @@
 namespace backend\modules\admin\controllers;
 
 use Yii;
-use common\models\Seo;
-use common\models\SeoSearch;
+use common\models\Client;
+use common\models\ClientSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
+use yii\web\UploadedFile;
 
 /**
- * SeoController implements the CRUD actions for Seo model.
+ * ClientController implements the CRUD actions for Client model.
  */
-class SeoController extends Controller {
+class ClientsController extends Controller {
 
     /**
      * {@inheritdoc}
      */
     public function behaviors() {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                    
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -40,11 +30,11 @@ class SeoController extends Controller {
     }
 
     /**
-     * Lists all Seo models.
+     * Lists all Client models.
      * @return mixed
      */
     public function actionIndex() {
-        $searchModel = new SeoSearch();
+        $searchModel = new ClientSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -54,7 +44,7 @@ class SeoController extends Controller {
     }
 
     /**
-     * Displays a single Seo model.
+     * Displays a single Client model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -66,18 +56,22 @@ class SeoController extends Controller {
     }
 
     /**
-     * Creates a new Seo model.
+     * Creates a new Client model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate() {
-        $model = new Seo();
-        if ($model->load(Yii::$app->request->post())) {
-            $model->meta_values = json_encode(Yii::$app->request->post('Seo'));
+        $model = new Client();
 
-            if ($model->save()) {
-                return $this->redirect(['index']);
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
+            $model->save();
+             if ($model->thumbnail) {
+                $folder = Yii::$app->basePath . '/web/uploads/';
+                $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
             }
+            return $this->redirect(['view', 'id' => $model->client_id]);
         }
 
         return $this->render('create', [
@@ -86,7 +80,7 @@ class SeoController extends Controller {
     }
 
     /**
-     * Updates an existing Seo model.
+     * Updates an existing Client model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -95,11 +89,8 @@ class SeoController extends Controller {
     public function actionUpdate($id) {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post())) {
-            $model->meta_values = json_encode(Yii::$app->request->post('Seo'));
-            if($model->save()) {
-                return $this->redirect(['view', 'id' => $model->seo_id]);
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->client_id]);
         }
 
         return $this->render('update', [
@@ -108,7 +99,7 @@ class SeoController extends Controller {
     }
 
     /**
-     * Deletes an existing Seo model.
+     * Deletes an existing Client model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -121,14 +112,14 @@ class SeoController extends Controller {
     }
 
     /**
-     * Finds the Seo model based on its primary key value.
+     * Finds the Client model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Seo the loaded model
+     * @return Client the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id) {
-        if (($model = Seo::findOne($id)) !== null) {
+        if (($model = Client::findOne($id)) !== null) {
             return $model;
         }
 

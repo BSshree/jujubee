@@ -1,4 +1,4 @@
-
+  
   
     <section class="banner">
          <h2>Our Story</h2>

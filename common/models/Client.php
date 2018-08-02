@@ -31,7 +31,7 @@ class Client extends \yii\db\ActiveRecord {
         return [
                 [['title', 'slug', 'desc'], 'required'],
                 [['title','slug'], 'string', 'max' => 464],
-                [['thumbnail'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg, jpeg'],
+                [['thumbnail'], 'file', 'extensions' => 'png, jpg, jpeg'],
                 [['desc'], 'string', 'max' => 6554],
                 [['created_at', 'updated_at'], 'string', 'max' => 85],
         ];

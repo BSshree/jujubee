@@ -59,56 +59,58 @@ return [
             'enableStrictParsing' => true,
             'rules' => [
                 '/' => 'site/site/index',
-                [
-                    'pattern' => '/about/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'about'],
-                ],
-                    [
-                    'pattern' => '/work/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'work'],
-                ],
-                    [
-                    'pattern' => '/career/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'career'],
-                ],
-                    [
-                    'pattern' => '/contactus/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'contactus'],
-                ],
-                 [
-                    'pattern' => '/terms/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'terms'],
-                ],
-                [
-                    'pattern' => '/web-design/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'web-design'],
-                ],
-                [
-                    'pattern' => '/web/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'web'],
-                ],
-                [
-                    'pattern' => '/seo/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'seo'],
-                ],
-                [
-                    'pattern' => '/mobile/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'mobile'],
-                ],
-                 [
-                    'pattern' => '/outsource/<slug:>',
-                    'route' => '/site/site/pages',
-                    'defaults' => ['slug' => 'outsource'],
-                ],
+                '/<slug:[a-zA-Z0-9-]+>' => 'site/site/pages',
+//                '/<slug:[A-Z]+>'=>'site/site/pages',
+//                [
+//                    'pattern' => '/about',
+//                    'route' => '/site/site/index',
+//                    'defaults' => ['slug' => 'about'],
+//                ],
+//                    [
+//                    'pattern' => '/work',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'work'],
+//                ],
+//                    [
+//                    'pattern' => '/career',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'career'],
+//                ],
+//                    [
+//                    'pattern' => '/contactus',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'contactus'],
+//                ],
+//                 [
+//                    'pattern' => '/terms',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'terms'],
+//                ],
+//                [
+//                    'pattern' => '/web-design',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'web-design'],
+//                ],
+//                [
+//                    'pattern' => '/web',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'web'],
+//                ],
+//                [
+//                    'pattern' => '/seo',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'seo'],
+//                ],
+//                [
+//                    'pattern' => '/mobile',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'mobile'],
+//                ],
+//                 [
+//                    'pattern' => '/outsource',
+//                    'route' => '/site/site/pages',
+//                    'defaults' => ['slug' => 'outsource'],
+//                ],
             ],
         ],
     ],

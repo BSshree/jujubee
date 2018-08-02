@@ -10,7 +10,8 @@ use yii\widgets\ActiveForm;
 
 <div class="client-form">
 
-   <?php $form = ActiveForm::begin([
+    <?php
+    $form = ActiveForm::begin([
                 'id' => 'active-form',
                 'enableClientValidation' => true,
                 'validateOnSubmit' => true,
@@ -33,11 +34,23 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'thumbnail')->fileInput() ?>
 
-     <div class="form-group">
+    <?php if (!$model->isNewRecord) { ?>
+        <?php if ($model->thumbnail) { ?>
+            <div class="form-group">
+                <div class="col-sm-0 col-sm-offset-2">
+                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->thumbnail; ?>" width="130px" height="100px">
+                </div>
+            </div>
+
+        <?php }
+    }
+    ?>
+
+    <div class="form-group">
         <div class="col-sm-0 col-sm-offset-2">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+<?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        </div>
+
+<?php ActiveForm::end(); ?>
+
     </div>
-
-    <?php ActiveForm::end(); ?>
-
-</div>

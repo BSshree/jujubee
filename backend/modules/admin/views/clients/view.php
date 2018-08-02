@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\web\View;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
@@ -16,26 +17,34 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->client_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->client_id], [
+        <?=
+        Html::a('Delete', ['delete', 'id' => $model->client_id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
                 'method' => 'post',
             ],
-        ]) ?>
+        ])
+        ?>
     </p>
 
-    <?= DetailView::widget([
+    <?=
+    DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'client_id',
             'title',
             'slug',
             'desc',
-            'thumbnail',
-            'created_at',
-            'updated_at',
+                [
+                'attribute' => 'thumbnail',
+                'format' => 'image',
+                'value' => function($data) {
+                    return Yii::getAlias('@web/uploads') . '/' . $data->thumbnail;
+                },
+                'format' => ['image', ['width' => '130', 'height' => '100']],
+            ],
         ],
-    ]) ?>
+    ])
+    ?>
 
 </div>

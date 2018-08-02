@@ -47,7 +47,7 @@ class SeoSearch extends Seo
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'pagination' => array('pageSize' => 2),
+            'pagination' => array('pageSize' => 10),
         ]);
 
         $this->load($params);

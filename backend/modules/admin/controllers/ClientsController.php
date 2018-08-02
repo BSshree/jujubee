@@ -67,7 +67,7 @@ class ClientsController extends Controller {
 
             $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
             $model->save();
-             if ($model->thumbnail) {
+            if ($model->thumbnail) {
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
             }
@@ -88,8 +88,19 @@ class ClientsController extends Controller {
      */
     public function actionUpdate($id) {
         $model = $this->findModel($id);
+        $old_image = $model->thumbnail;
+        if ($model->load(Yii::$app->request->post())) {
+            $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
+            $model->save();
+            
+            if ($model->thumbnail) {
+                $folder = Yii::$app->basePath . '/web/uploads/';
+                $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                if(!empty($old_image)){
+                   unlink(Yii::$app->basePath . '/web/uploads/' . $old_image);
+                }
+            }
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->client_id]);
         }
 

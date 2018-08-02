@@ -14,18 +14,6 @@ class m180802_053229_create_pages_table extends Migration {
 
     public function safeUp() {
 
-        $this->createTable(self::PAGES_TABLE, [
-            'page_id' => $this->primaryKey(),
-            'title' => $this->string(464)->Null(),
-            'slug' => $this->string(5564)->Null(),
-            'content' => $this->string(65564)->Null(),
-            'bgimage' => $this->string(255)->Null(),
-            'published_on' => $this->string(55)->Null(),
-            'status' => $this->string(55)->Null(),
-            'created_at' => $this->string(55)->Null(),
-            'updated_at' => $this->string(55)->Null(),
-        ]);
-
         $this->insert(self::PAGES_TABLE, [
             'title' => 'Our Story',
             'slug' => 'about',

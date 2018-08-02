@@ -71,7 +71,6 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionPages($slug) {
-        //print_r(Yii::$app->request->url); exit;
         if ( $pagez = Page::findOne(['slug' => $slug])) {
             return $this->render('/pages/common_page' , ['pagez' => $pagez ]);
         } else {

@@ -60,7 +60,6 @@ return [
             'rules' => [
                 '/' => 'site/site/index',
                 '/<slug:[a-zA-Z0-9-]+>' => 'site/site/pages',
-//                '/<slug:[A-Z]+>'=>'site/site/pages',
 //                [
 //                    'pattern' => '/about',
 //                    'route' => '/site/site/index',

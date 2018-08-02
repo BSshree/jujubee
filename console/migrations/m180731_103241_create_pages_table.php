@@ -22,6 +22,8 @@ class m180731_103241_create_pages_table extends Migration
             'page_id' => $this->primaryKey(),
             'title' => $this->string(464)->Null(),
             'slug' => $this->string(5564)->Null(),
+            'content' => $this->string(65564)->Null(),
+            'bgimage' => $this->string(255)->Null(),
             'published_on' => $this->string(55)->Null(),
             'status' => $this->string(55)->Null(),
             'created_at' => $this->string(55)->Null(),

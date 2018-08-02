@@ -5,13 +5,13 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `pages`.
  */
-class m180802_053229_create_pages_table extends Migration
-{
+class m180802_053229_create_pages_table extends Migration {
+
     /**
      * {@inheritdoc}
      */
     const PAGES_TABLE = '{{%pages}}';
-    
+
     public function safeUp() {
 
         $this->createTable(self::PAGES_TABLE, [
@@ -19,6 +19,7 @@ class m180802_053229_create_pages_table extends Migration
             'title' => $this->string(464)->Null(),
             'slug' => $this->string(5564)->Null(),
             'content' => $this->string(65564)->Null(),
+            'bgimage' => $this->string(255)->Null(),
             'published_on' => $this->string(55)->Null(),
             'status' => $this->string(55)->Null(),
             'created_at' => $this->string(55)->Null(),
@@ -28,11 +29,7 @@ class m180802_053229_create_pages_table extends Migration
         $this->insert(self::PAGES_TABLE, [
             'title' => 'Our Story',
             'slug' => 'about',
-            'content' => " <section class='banner'>
-         <h2>Our Story</h2>
-    </section>
-
-    <section class='welcome'>
+            'content' => "  <section class='welcome'>
       <div class='container'>
         <div class='row'>
           <div class='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
@@ -92,17 +89,13 @@ class m180802_053229_create_pages_table extends Migration
       </div>
     </div>
     </section> ",
+            'bgimage' => 'themes/site_theme/images/about-bg.png',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
             'title' => 'Our Works',
             'slug' => 'work',
-            'content' => " <section class='banner banner-work'>
-         <h2>Our Works</h2>
-         <h4><a href='/'> HOME </a> / OUR WORKS</h4>
-    </section>
-
-    <section class='work'>
+            'content' => " <section class='work'>
         <div class='container'>
         <div class='row height-work grid text-left'>
             <div class='col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8'>
@@ -290,17 +283,13 @@ class m180802_053229_create_pages_table extends Migration
 </div>
     </div>
     </section>",
+            'bgimage' => 'themes/site_theme/images/work.jpg',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
             'title' => 'UI / UX Design',
             'slug' => 'web-design',
-            'content' => " <section class='banner banner-services'>
-         <h2>UI / UX Design </h2>
-         <!-- <h4><a href='/'> HOME </a> / SERVICES</h4> -->
-    </section>
-
-    <section class='services-seo webdesign-service-cont'>
+            'content' => "  <section class='services-seo webdesign-service-cont'>
       <div class='container'>
         <div class='row'>
           <div class='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 inner-heading'>
@@ -371,15 +360,11 @@ class m180802_053229_create_pages_table extends Migration
           
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus dolor, convallis sit amet iaculis quis, tempus ut nibh. Fusce gravida finibus est.
           
-          
            </div>
           
         </div>
       </div>
     </section>
-
-
-
 <section class='callus'>
       <div class='container'>
         <div class='row'>
@@ -394,17 +379,13 @@ class m180802_053229_create_pages_table extends Migration
         </div>
       </div>  
     </section>",
+            'bgimage' => 'themes/site_theme/images/services-bg.jpg',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
             'title' => 'Web Development',
             'slug' => 'web',
-            'content' => " <section class='banner banner-web-development'>
-         <h2>Web Development</h2>
-         <!-- <h4><a href='/'> HOME </a> / SERVICES</h4> -->
-    </section>
-
-    <section class='services-seo webdesign-service-cont'>
+            'content' => " <section class='services-seo webdesign-service-cont'>
       <div class='container'>
         <div class='row'>
           <div class='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 inner-heading'>
@@ -469,18 +450,13 @@ Custom Application Development
         </div>
       </div>  
     </section>",
+            'bgimage' => 'themes/site_theme/images/web-development-banner.jpg',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
             'title' => 'SEO',
             'slug' => 'seo',
-            'content' => " <section class='banner banner-service-details'>
-         <h2>SEO</h2>
-<!--          <h4><a href='/'> HOME  </a> / WEB DESINGING</h4> -->
-    </section>
-
-
-    <section class='services-detail'>
+            'content' => " <section class='services-detail'>
       <div class='container'>
         <div class='row'>
           <div class='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 service-web'>
@@ -488,7 +464,7 @@ Custom Application Development
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent scelerisque volutpat turpis, eu hendrerit enim scel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci.</p>
           </div>
           <div class='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'>
-            <img src='themes/site_theme/images/digital.jpg' alt=''>
+            <img src='themes/site_theme/images/digi.jpg' alt=''>
           </div>
 
           <div class='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 services-category'>
@@ -560,17 +536,14 @@ Custom Application Development
            </div>
         </div>
       </div>  
-    </section>"
+    </section>",
+            'bgimage' => 'themes/site_theme/images/service-details.jpg',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
             'title' => 'Mobile App Development',
             'slug' => 'mobile',
-            'content' => "<section class='banner banner-mobile'>
-  <h2>Mobile App Development</h2>
-  <!-- <h4><a href='/'> HOME </a> / SERVICES</h4> --> 
-</section>
-<section class='services-seo webdesign-service-cont'>
+            'content' => "<section class='services-seo webdesign-service-cont'>
   <div class='container'>
     <div class='row'>
       <div class='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 inner-heading'>
@@ -631,19 +604,14 @@ Custom Application Development
       </div>
     </div>
   </div>
-</section>"
+</section>",
+            'bgimage' => 'themes/site_theme/images/mobile-app.jpg',
         ]);
-        
-          $this->insert(self::PAGES_TABLE, [
+
+        $this->insert(self::PAGES_TABLE, [
             'title' => 'Out Source',
             'slug' => 'outsource',
-              'content' => '<section class="banner banner-outsource">
-         <h2>Out Source</h2>
-<!--          <h4><a href="/"> HOME  </a> / WEB DESINGING</h4> -->
-    </section>
-
-
-    <section class="services-detail">
+            'content' => ' <section class="services-detail">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 service-web">
@@ -682,15 +650,16 @@ Outsourcing Company</h2>
            </div>
         </div>
       </div>  
-    </section>'
+    </section>',
+            'bgimage' => 'themes/site_theme/images/out-source.jpg',
         ]);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function safeDown()
-    {
+    public function safeDown() {
         $this->dropTable(self::PAGES_TABLE);
     }
+
 }

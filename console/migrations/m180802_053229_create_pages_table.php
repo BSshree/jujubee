@@ -89,7 +89,7 @@ class m180802_053229_create_pages_table extends Migration {
       </div>
     </div>
     </section> ",
-            'bgimage' => 'themes/site_theme/images/about-bg.png',
+            'bgimage' => 'banner',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
@@ -283,7 +283,7 @@ class m180802_053229_create_pages_table extends Migration {
 </div>
     </div>
     </section>",
-            'bgimage' => 'themes/site_theme/images/work.jpg',
+            'bgimage' => 'banner banner-work',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
@@ -379,7 +379,7 @@ class m180802_053229_create_pages_table extends Migration {
         </div>
       </div>  
     </section>",
-            'bgimage' => 'themes/site_theme/images/services-bg.jpg',
+            'bgimage' => 'banner banner-services',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
@@ -450,7 +450,7 @@ Custom Application Development
         </div>
       </div>  
     </section>",
-            'bgimage' => 'themes/site_theme/images/web-development-banner.jpg',
+            'bgimage' => 'banner banner-web-development',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
@@ -537,7 +537,7 @@ Custom Application Development
         </div>
       </div>  
     </section>",
-            'bgimage' => 'themes/site_theme/images/service-details.jpg',
+            'bgimage' => 'banner banner-service-details',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
@@ -605,7 +605,7 @@ Custom Application Development
     </div>
   </div>
 </section>",
-            'bgimage' => 'themes/site_theme/images/mobile-app.jpg',
+            'bgimage' => 'banner banner-mobile',
         ]);
 
         $this->insert(self::PAGES_TABLE, [
@@ -651,7 +651,7 @@ Outsourcing Company</h2>
         </div>
       </div>  
     </section>',
-            'bgimage' => 'themes/site_theme/images/out-source.jpg',
+            'bgimage' => 'banner banner-outsource',
         ]);
     }
 
@@ -661,5 +661,4 @@ Outsourcing Company</h2>
     public function safeDown() {
         $this->dropTable(self::PAGES_TABLE);
     }
-
 }

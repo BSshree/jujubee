@@ -1,7 +1,6 @@
-<section class="">
-    <img src="<?php $pagez->bgimage; ?>" class="img-right">
+<section class="<?= $pagez->bgimage; ?>">
   <h2><?=  $pagez->title; ?></h2>
-  <!-- <h4><a href="index.html"> HOME </a> / SERVICES</h4> --> 
+  <?= $pagez->slug == 'work' ? "<h4><a href='/'> HOME </a> /  OUR WORKS</h4>": NULL ?>
 </section>
 
 <?php echo $pagez->content; ?>      

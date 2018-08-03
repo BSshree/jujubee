@@ -37,7 +37,7 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
               <p>Pages</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class="ion-ios-paper"></i>
             </div>
                <?php echo Html::a($view, ['/admin/pages/index'], ["class" => 'small-box-footer']); ?>
             <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
@@ -72,7 +72,22 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
               <p>Clients</p>
             </div>
             <div class="icon">
-              <i class="ion ion-person-add"></i>
+              <i class="ion ion-ios-people"></i>
+            </div>
+               <?php echo Html::a($view, ['/admin/clients/index'], ["class" => 'small-box-footer']); ?>
+            <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
+          </div>
+        </div>
+         <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-teal">
+            <div class="inner">
+                <h3><?= $clients = Client::find()->count();?></h3>
+
+              <p>HTML Blocks</p>
+            </div>
+            <div class="icon">
+              <i class="ion-ios-copy"></i>
             </div>
                <?php echo Html::a($view, ['/admin/clients/index'], ["class" => 'small-box-footer']); ?>
             <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->

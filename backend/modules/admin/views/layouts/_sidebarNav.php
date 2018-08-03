@@ -78,6 +78,7 @@
                     <li><a href="/webpanel/admin/pages/index"><i class="fa fa-circle-o"></i> Pages</a></li>  
                     <li><a href="/webpanel/admin/seo/index"><i class="fa fa-circle-o"></i> SEO</a></li>
                     <li><a href="/webpanel/admin/clients/index"><i class="fa fa-circle-o"></i> Client</a></li>
+                    <li><a href="/webpanel/admin/blocks/index"><i class="fa fa-circle-o"></i> HTML Blocks</a></li>
                     <li><a href="#l"><i class="fa fa-circle-o"></i> Portfolio</a></li>
                 </ul>
             </li>

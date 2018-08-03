@@ -647,6 +647,12 @@ Outsourcing Company</h2>
      * {@inheritdoc}
      */
     public function safeDown() {
-        $this->dropTable(self::PAGES_TABLE);
+        $this->delete(self::PAGES_TABLE,['title' => 'Our Story']);
+        $this->delete(self::PAGES_TABLE,['title' => 'Our Works']);
+        $this->delete(self::PAGES_TABLE,['title' => 'UI / UX Design']);
+        $this->delete(self::PAGES_TABLE,['title' => 'Web Development']);
+        $this->delete(self::PAGES_TABLE,['title' => 'SEO']);
+        $this->delete(self::PAGES_TABLE,['title' => 'Mobile App Development']);
+        $this->delete(self::PAGES_TABLE,['title' => 'Out Source']);
     }
 }

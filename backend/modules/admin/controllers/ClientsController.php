@@ -71,7 +71,7 @@ class ClientsController extends Controller {
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
             }
-            return $this->redirect(['view', 'id' => $model->client_id]);
+            return $this->redirect(['index']);
         }
 
         return $this->render('create', [
@@ -101,7 +101,7 @@ class ClientsController extends Controller {
                 }
             }
 
-            return $this->redirect(['view', 'id' => $model->client_id]);
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [

@@ -77,7 +77,7 @@ class PagesController extends Controller
         $model = new Page();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->page_id]);
+            return $this->redirect(['index']);
         }
 
         return $this->render('create', [
@@ -97,7 +97,7 @@ class PagesController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->page_id]);
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [

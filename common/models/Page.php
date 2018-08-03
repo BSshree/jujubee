@@ -29,7 +29,7 @@ class Page extends \yii\db\ActiveRecord {
      */
     public function rules() {
         return [
-                [['title', 'slug','published_on','status'], 'required'],
+               // [['title', 'slug','published_on','status'], 'required'],
                 [['title'], 'string', 'max' => 464],
                 [['slug'], 'string', 'max' => 5564],
                 [['content'], 'string', 'max' => 55564],

@@ -12,9 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="page-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
+    <p class="pull-right">
         <?= Html::a('Update', ['update', 'id' => $model->page_id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->page_id], [
             'class' => 'btn btn-danger',

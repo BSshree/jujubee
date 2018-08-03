@@ -12,7 +12,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="seo-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p class="pull-right">
@@ -44,7 +43,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $data->meta_keyword;
                 },
             ],
-                ['class' => 'yii\grid\ActionColumn'],
+                ['class' => 'yii\grid\ActionColumn',
+                     'header' => 'Actions'],
         ],
     ]);
     ?>

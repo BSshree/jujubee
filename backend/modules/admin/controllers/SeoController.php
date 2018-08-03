@@ -98,7 +98,7 @@ class SeoController extends Controller {
         if ($model->load(Yii::$app->request->post())) {
             $model->meta_values = json_encode(Yii::$app->request->post('Seo'));
             if($model->save()) {
-                return $this->redirect(['view', 'id' => $model->seo_id]);
+                return $this->redirect(['index']);
             }
         }
 

@@ -29,7 +29,7 @@ class Client extends \yii\db\ActiveRecord {
      */
     public function rules() {
         return [
-                [['title', 'slug', 'desc'], 'required'],
+                //[['title', 'slug', 'desc'], 'required'],
                 [['title','slug'], 'string', 'max' => 464],
                 [['thumbnail'], 'file', 'extensions' => 'png, jpg, jpeg'],
                 [['desc'], 'string', 'max' => 6554],
@@ -43,9 +43,9 @@ class Client extends \yii\db\ActiveRecord {
     public function attributeLabels() {
         return [
             'client_id' => 'Client ID',
-            'title' => 'Title',
+            'title' => 'Name',
             'slug' => 'Slug',
-            'desc' => 'Desc',
+            'desc' => 'Testimonial',
             'thumbnail' => 'Thumbnail',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',

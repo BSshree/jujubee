@@ -37,9 +37,9 @@ AppAssetAdmin::register($this);
 
             <?php echo $this->render('@backend/modules/admin/views/layouts/_sidebarNav'); ?>  
             <div class="content-wrapper">
-                <section class="content">
+                <section class="content-header">
 
-                    <?= Html::encode($this->title) ?>
+                    <h2><?= Html::encode($this->title) ?></h2>
 
                     <?=
                     Breadcrumbs::widget([

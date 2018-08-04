@@ -6,6 +6,7 @@ use yii\helpers\Html;
 use yii\web\View;
 use yii\bootstrap\Alert;
 use common\models\Seo;
+use common\models\Work;
 use common\models\Client;
 use common\models\Page;
 $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
@@ -80,7 +81,7 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
         </div>
          <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-teal">
+          <div class="small-box bg-blue">
             <div class="inner">
                 <h3><?= $clients = Client::find()->count();?></h3>
 
@@ -90,6 +91,21 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
               <i class="ion-ios-copy"></i>
             </div>
                <?php echo Html::a($view, ['/admin/clients/index'], ["class" => 'small-box-footer']); ?>
+            <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-teal">
+            <div class="inner">
+                <h3><?= $works = Work::find()->count();?></h3>
+
+              <p>Works</p>
+            </div>
+            <div class="icon">
+              <i class="ion-ios-briefcase"></i>
+            </div>
+               <?php echo Html::a($view, ['/admin/works/index'], ["class" => 'small-box-footer']); ?>
             <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
           </div>
         </div>

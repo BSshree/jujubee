@@ -135,3 +135,16 @@
         'scrollTop' : $(".map").position().top
     });
 });
+
+       $( document ).ready(function() {
+  $('.hoeit1').css('position','relative');
+  setInterval(function(){
+
+  $('.hoeit1').animate({
+      right: '-=25'
+    }, 1200);
+  $('.hoeit1').animate({
+      right: '+=25'
+    }, 1200);
+  }, 2400);
+});

@@ -36,7 +36,7 @@ use yii\widgets\ActiveForm;
         <?php if ($model->thumbnail) { ?>
             <div class="form-group">
                 <div class="col-sm-0 col-sm-offset-2">
-                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->thumbnail; ?>" width="130px" height="100px">
+                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->thumbnail; ?>" width="130px" height="120px">
                 </div>
             </div>
 

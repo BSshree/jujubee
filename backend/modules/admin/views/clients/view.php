@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($data) {
                     return Yii::getAlias('@web/uploads') . '/' . $data->thumbnail;
                 },
-                'format' => ['image', ['width' => '130', 'height' => '100']],
+                'format' => ['image', ['width' => '130', 'height' => '120']],
             ],
         ],
     ])

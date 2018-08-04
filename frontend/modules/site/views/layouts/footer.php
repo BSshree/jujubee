@@ -94,17 +94,3 @@ use yii\widgets\ActiveForm;
       <span>Copyright @ 2018 jujubee media. All rights reserved. | Digital Marketing Agency <a href="/terms">Terms & conditions apply</a></span>
     </div>
     </footer>
-     <script type="text/javascript">
-       $( document ).ready(function() {
-  $('.hoeit1').css('position','relative');
-  setInterval(function(){
-
-  $('.hoeit1').animate({
-      right: '-=25'
-    }, 1200);
-  $('.hoeit1').animate({
-      right: '+=25'
-    }, 1200);
-  }, 2400);
-});
-     </script>

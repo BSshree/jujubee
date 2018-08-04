@@ -29,6 +29,16 @@ return [
             'enableCsrfValidation' => false,
             'baseUrl' => $baseUrl,
         ],
+        'shortcodes' => [
+            'class' => 'tpoxa\shortcodes\Shortcode',
+            'callbacks' => [
+                'blockcode' => ['frontend\widgets\blockcode\lastPhoto', 'widget'],
+                'anothershortcode'=>function($attrs, $content, $tag){
+                ///
+                },
+                
+            ]
+        ],
         'user' => [
             'class' => 'yii\web\User',
             'identityClass' => 'common\models\User',

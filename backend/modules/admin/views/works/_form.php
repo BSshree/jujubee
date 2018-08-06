@@ -79,15 +79,12 @@ $Alltypes = ArrayHelper::map(Work::find()->all(), 'project_type', 'project_type'
     <?= $form->field($model, 'link')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'thumbnail')->fileInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'project_image')->fileInput(['maxlength' => true]) ?>
-
-
-<?php if (!$model->isNewRecord) { ?>
+    
+    <?php if (!$model->isNewRecord) { ?>
     <?php if ($model->thumbnail) { ?>
             <div class="form-group">
                 <div class="col-sm-0 col-sm-offset-2">
-                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->thumbnail; ?>" width="130px" height="120px"><br> <span><b>Thumbnail</b></span> 
+                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->thumbnail; ?>" width="130px" height="120px"><br> <span><b><i>Thumbnail</i></b></span> 
                 </div>
             </div>
 
@@ -96,11 +93,16 @@ $Alltypes = ArrayHelper::map(Work::find()->all(), 'project_type', 'project_type'
     }
     ?>
 
+
+    <?= $form->field($model, 'project_image')->fileInput(['maxlength' => true]) ?>
+
+
+
 <?php if (!$model->isNewRecord) { ?>
     <?php if ($model->project_image) { ?>
             <div class="form-group">
                 <div class="col-sm-0 col-sm-offset-2">
-                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->project_image; ?>" width="130px" height="120px"><br> <span><b>Project Image</b></span> 
+                    <img src="<?php echo Yii::getAlias('@web/uploads') . '/' . $model->project_image; ?>" width="130px" height="120px"><br> <span><b><i>Project Image</i></b></span> 
                 </div>
             </div>
 

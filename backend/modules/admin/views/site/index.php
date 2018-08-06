@@ -83,14 +83,14 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
           <!-- small box -->
           <div class="small-box bg-blue">
             <div class="inner">
-                <h3><?= $clients = Client::find()->count();?></h3>
+                <h3><?= $blocks = common\models\Block::find()->count();?></h3>
 
               <p>HTML Blocks</p>
             </div>
             <div class="icon">
               <i class="ion-ios-copy"></i>
             </div>
-               <?php echo Html::a($view, ['/admin/clients/index'], ["class" => 'small-box-footer']); ?>
+               <?php echo Html::a($view, ['/admin/blocks/index'], ["class" => 'small-box-footer']); ?>
             <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
           </div>
         </div>

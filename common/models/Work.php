@@ -34,7 +34,7 @@ class Work extends \yii\db\ActiveRecord
         return [
             [['category', 'title'], 'string', 'max' => 185],
             [['slug'], 'string', 'max' => 64],
-             [['thumbnail'], 'file', 'extensions' => 'png, jpg, jpeg'],
+            [['thumbnail','project_image'], 'file', 'extensions' => 'png, jpg, jpeg'],
             [['project_date', 'project_type'], 'string', 'max' => 5564],
             [['link'], 'string', 'max' => 564],
         ];
@@ -54,6 +54,7 @@ class Work extends \yii\db\ActiveRecord
             'project_type' => 'Project Type',
             'link' => 'Link',
             'thumbnail' => 'Thumbnail',
+            'project_image' => 'Project Image',
         ];
     }
 }

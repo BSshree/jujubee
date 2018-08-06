@@ -14,6 +14,7 @@ use common\models\ResetPasswordForm;
 use common\models\SignupForm;
 use common\models\ContactForm;
 use common\models\Page;
+use common\models\Work;
 
 /**
  * Site controller
@@ -72,8 +73,14 @@ class SiteController extends Controller {
      */
     public function actionPages($slug) {
         if ( $pagez = Page::findOne(['slug' => $slug])) {
-            return $this->render('/pages/common_page' , ['pagez' => $pagez ]);
+            $formatted_content = Yii::$app->shortcodes->parse($pagez->content);
+            return $this->render('/pages/common_page' , ['pagez' => $pagez, 'formatted_content' => $formatted_content]);
         } else {
+            if($slug == 'work'){
+                $works = Work::find()->all();
+                $categories = \yii\helpers\ArrayHelper::map($works, 'category', 'category');
+                return $this->render('/pages/work' , ['works' => $works,'categories' => $categories ]);
+            }
             return $this->render('/pages/' . $slug);
         }
     }

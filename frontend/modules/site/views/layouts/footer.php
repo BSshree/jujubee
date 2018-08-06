@@ -11,7 +11,8 @@ use yii\widgets\ActiveForm;
  <footer class="section-footer">
       <div class="container-fluid footer-padding">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mob-footer">
+            <?php echo \Yii::$app->shortcodes->parse('[blockcode title="Footer Brand Info"]'); ?>
+<!--          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mob-footer">
            <p class="footer-font">We Build</p>
           <p class="footer-sub-hed">Brands</p>
           <p class="font-14">
@@ -26,7 +27,7 @@ use yii\widgets\ActiveForm;
              </p>
           </div>
 
-          </div>
+          </div>-->
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
             <h4 class="mob-hed-center font-pop">Digital</h4>
             <ul>

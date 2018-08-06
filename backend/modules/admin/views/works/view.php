@@ -41,6 +41,15 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format' => ['image', ['width' => '130', 'height' => '120']],
             ],
+                        
+                        [
+                'attribute' => 'project_image',
+                'format' => 'image',
+                'value' => function($data) {
+                    return Yii::getAlias('@web/uploads') . '/' . $data->project_image;
+                },
+                'format' => ['image', ['width' => '130', 'height' => '120']],
+            ],
         ],
     ]) ?>
 

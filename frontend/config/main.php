@@ -32,10 +32,7 @@ return [
         'shortcodes' => [
             'class' => 'tpoxa\shortcodes\Shortcode',
             'callbacks' => [
-                'blockcode' => ['frontend\widgets\blockcode\lastPhoto', 'widget'],
-                'anothershortcode'=>function($attrs, $content, $tag){
-                ///
-                },
+                'blockcode' => ['frontend\widgets\Blockcode', 'widget']
                 
             ]
         ],

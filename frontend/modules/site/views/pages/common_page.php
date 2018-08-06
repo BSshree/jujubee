@@ -3,4 +3,4 @@
   <?= $pagez->slug == 'work' ? "<h4><a href='/'> HOME </a> /  OUR WORKS</h4>": NULL ?>
 </section>
 
-<?php echo $pagez->content; ?>      
+<?php echo $formatted_content; ?>      

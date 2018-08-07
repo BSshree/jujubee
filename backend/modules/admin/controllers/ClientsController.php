@@ -104,12 +104,15 @@ class ClientsController extends Controller {
             $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
             $model->save();
             
-            if ($model->thumbnail) {
+           if ($model->thumbnail) {
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
-                if(!empty($old_image)){
-                   unlink(Yii::$app->basePath . '/web/uploads/' . $old_image);
+                if (!empty($old_image)) {
+                    unlink(Yii::$app->basePath . '/web/uploads/' . $old_image);
                 }
+            }else{
+                 $model->thumbnail = $old_image;
+                 $model->save();
             }
 
             return $this->redirect(['index']);

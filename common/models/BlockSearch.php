@@ -47,6 +47,7 @@ class BlockSearch extends Block
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+             'pagination' => array('pageSize' => 15),
         ]);
 
         $this->load($params);

@@ -47,6 +47,7 @@ class WorkSearch extends Work
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => array('pagesize' => 15),
         ]);
 
         $this->load($params);

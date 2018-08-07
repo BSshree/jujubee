@@ -21,7 +21,7 @@
             foreach ($works as $work){?>
             
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter <?php echo strtolower($work->category); ?>" >
-                <a href="#" data-toggle="modal" data-target="#workModal" data-category="<?php echo $work->category; ?>" data-projectdate="<?php echo $work->project_date; ?>"  data-projecttype="<?php echo $work->project_type; ?>" data-projecttitle="<?php echo $work->title; ?>" data-projectlink="<?php echo $work->link; ?>">
+                <a href="#" data-toggle="modal" data-target="#workModal" data-category="<?php echo strtolower($work->category); ?>" data-projectdate="<?php echo strtolower($work->project_date); ?>"  data-projecttype="<?php echo strtolower($work->project_type); ?>" data-projecttitle="<?php echo strtolower($work->title); ?>" data-projectlink="<?php echo ($work->link); ?>">
                     <figure class="effect-oscar"> <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
                         <figcaption>
                             <p class="pro-txt"> <?php echo strtoupper($work->category); ?> <br/>
@@ -46,13 +46,13 @@
                         </button>
                     </div>
                     <div class="modal-body modal-work">
-                        <h4 class="worktitle"><?php echo ucfirst($work->title); ?> </h4>
+                        <h4 class="worktitle" style="text-transform: capitalize"></h4>
                         <div class="project-details">
                             <div class="project-date">
-                                <p>Project Date:<span class="workprojectdate"> <?php echo strtoupper($work->project_date); ?> </span></p>
+                                <p>Project Date:<span class="workprojectdate"></span></p>
                             </div>
-                            <p>Project Type: <span class="workprojecttype"><?php echo strtoupper($work->project_type); ?> </span></p>
-                            <p>Project Link: <a class="worklink" href="<?php echo ($work->link); ?>"></a></p>
+                            <p>Project Type: <span class="workprojecttype"  style="text-transform: capitalize"> </span></p>
+                            <p>Project Link: <a class="worklink" href="" target="2"></a></p>
                         </div>
                         <div id="Projects" class="owl-carousel owl-theme slider-project">
                             <div class="item">
@@ -89,6 +89,7 @@ $script = <<< JS
         modal.find('.workprojecttype').text(projecttype);
         modal.find('.worktitle').text(projecttitle);
         modal.find('.worklink').text(projectlink);
+        modal.find('.worklink').attr('href',projectlink);
       });
 
         $(".filter-button").click(function(){

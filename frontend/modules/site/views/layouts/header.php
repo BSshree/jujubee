@@ -30,7 +30,7 @@ use yii\bootstrap\Modal;
               </ul>
         </div>
        <ul class="menu__list" id="menu">
-          <li class="menu__item"><a href="/about" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="<?=Url::to('/about')?>" class="menu__link">About</a></li>
           <li class="menu__item">
             <a href="#" class="menu__link services-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Services</a>
             <div class="collapse" id="collapseExample">

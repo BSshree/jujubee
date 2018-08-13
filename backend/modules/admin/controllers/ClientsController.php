@@ -21,14 +21,13 @@ class ClientsController extends Controller {
      */
     public function behaviors() {
         return [
-             'access' => [
+            'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
-                    [
+                        [
                         'allow' => true,
                         'roles' => ['@'],
                     ],
-                    
                 ],
             ],
             'verbs' => [
@@ -79,8 +78,12 @@ class ClientsController extends Controller {
             $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
             $model->save();
             if ($model->thumbnail) {
+                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                $model->thumbnail = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->save();
             }
             return $this->redirect(['index']);
         }
@@ -103,16 +106,20 @@ class ClientsController extends Controller {
         if ($model->load(Yii::$app->request->post())) {
             $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
             $model->save();
-            
-           if ($model->thumbnail) {
+
+            if ($model->thumbnail) {
+                 $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                 $model->thumbnail = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->save();
                 if (!empty($old_image)) {
                     unlink(Yii::$app->basePath . '/web/uploads/' . $old_image);
                 }
-            }else{
-                 $model->thumbnail = $old_image;
-                 $model->save();
+            } else {
+                $model->thumbnail = $old_image;
+                $model->save();
             }
 
             return $this->redirect(['index']);

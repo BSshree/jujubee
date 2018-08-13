@@ -69,7 +69,7 @@ $Alltypes = ArrayHelper::map(Work::find()->all(), 'project_type', 'project_type'
                 'pluginOptions' => [
                     'tags' => true,
                     'tokenSeparators' => [',', ' '],
-                    'maximumInputLength' => 20,
+                    'maximumInputLength' => 50,
                     'allowClear' => true,
                 ],
             ])

@@ -78,12 +78,20 @@ class WorksController extends Controller {
             $model->project_image = UploadedFile::getInstance($model, 'project_image');
             $model->save();
             if ($model->thumbnail) {
+                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
-                $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                $model->thumbnail->saveAs($folder . '/' . $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                $model->thumbnail = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->save();
             }
             if ($model->project_image) {
+                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
-                $model->project_image->saveAs($folder . '/' . $model->project_image->baseName . '.' . $model->project_image->extension);
+                $model->project_image->saveAs($folder . '/' . $randno . $model->project_image->baseName . '.' . $model->project_image->extension);
+                $model->project_image = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->save();
             }
             return $this->redirect(['index']);
         }
@@ -101,32 +109,40 @@ class WorksController extends Controller {
      */
     public function actionUpdate($id) {
         $model = $this->findModel($id);
-            $old_image = $model->thumbnail;
-            $old_pro_image = $model->project_image;
+        $old_image = $model->thumbnail;
+        $old_pro_image = $model->project_image;
 
         if ($model->load(Yii::$app->request->post())) {
             $model->thumbnail = UploadedFile::getInstance($model, 'thumbnail');
             $model->project_image = UploadedFile::getInstance($model, 'project_image');
             $model->save();
             if ($model->thumbnail) {
+                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
-                $model->thumbnail->saveAs($folder . '/' . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                $model->thumbnail->saveAs($folder . '/' . $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
+                $model->thumbnail = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->save();
                 if (!empty($old_image)) {
                     unlink(Yii::$app->basePath . '/web/uploads/' . $old_image);
                 }
-            }else{
-                 $model->thumbnail = $old_image;
-                 $model->save();
+            } else {
+                $model->thumbnail = $old_image;
+                $model->save();
             }
             if ($model->project_image) {
+                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
-                $model->project_image->saveAs($folder . '/' . $model->project_image->baseName . '.' . $model->project_image->extension);
+                $model->project_image->saveAs($folder . '/' . $randno . $model->project_image->baseName . '.' . $model->project_image->extension);
+                $model->project_image = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->save();
                 if (!empty($old_pro_image)) {
                     unlink(Yii::$app->basePath . '/web/uploads/' . $old_pro_image);
                 }
-            }else{
-                 $model->project_image = $old_pro_image;
-                 $model->save();
+            } else {
+                $model->project_image = $old_pro_image;
+                //$model->save();
             }
             return $this->redirect(['index']);
         }

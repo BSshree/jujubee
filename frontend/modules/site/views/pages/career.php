@@ -9,8 +9,11 @@
         <div class="row grid">
           <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h5>CAREERS</h5>
-            <h3>Let's work Together</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>Come join the Jujubee Media league!</h3>
+            <p>If you are passionate about exploring new career prospects, then its high time to come and join us.
+                <br> <br>We give you opportunities to explore your inner potential and bring out the best in you. Your talents and skills will be get the free space to bloom and prosper over the years!
+                <br><br>Jujubee Media…..we have innovative career options just as creative as we are! <br><br>
+            Apply now and give your career a potential kick-start!</p>
           </div>
           <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
             <img src="themes/site_theme/images/career-work.jpg" class="img-right img-border" > 

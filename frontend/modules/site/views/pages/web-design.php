@@ -14,8 +14,9 @@
           
           
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 service-web ">
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent scelerisque volutpat turpis, eu hendrerit enim scel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci.</p>
+            <h3>We build masterpieces for the web that are here to stay!</h3>
+            <p>Having been a recognized brand name for over a decade now, we have designed brand identities needed for business to stay ahead of competition. We believe that your brand is the reflection of your core ideologies and bringing them to life is something we love to do. 
+Implementing creativity and innovation we have developed masterpieces in UI / UX designing that are not only at par with the current trends but also surpass them.<br/><br/>From creating pixel perfect designs for websites to sketching a unique brand logo; we do it all with great passion here at Jujubee Media. Just designing is not what we believe in. We believe in giving life to your brand which will connect seamlessly with the audience giving you that much needed cutting-edge.</p>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <img src="themes/site_theme/images/web-design.jpg" alt="">
@@ -33,9 +34,9 @@
           
           <p class="wow zoomIn" data-wow-delay=".3s"> <img src="themes/site_theme/images/icon-7.png"  alt=""></p>
           
-          <h4> Research &  Workshops</h4>
+          <h4> Hardcore Research</h4>
           
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus dolor, convallis sit amet iaculis quis, tempus ut nibh. Fusce gravida finibus est.
+         Before we place our hands on designing a lot more work goes into understanding your brand and your ideologies.
           
           
            </div>
@@ -45,9 +46,9 @@
           
           <p class="wow zoomIn" data-wow-delay=".6s"> <img src="themes/site_theme/images/icon-8.png"  alt=""></p>
           
-          <h4> Ideation Sessions</h4>
+          <h4> Brainstorming</h4>
           
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus dolor, convallis sit amet iaculis quis, tempus ut nibh. Fusce gravida finibus est.
+          We brainstorm before every design to make sure the outcome is nothing but the best.
           
           
            </div>
@@ -58,9 +59,9 @@
           
           <p class="wow zoomIn" data-wow-delay=".9s"> <img src="themes/site_theme/images/icon-9.png"  alt=""></p>
           
-          <h4> Creativity and Design</h4>
+          <h4>Innovation</h4>
           
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus dolor, convallis sit amet iaculis quis, tempus ut nibh. Fusce gravida finibus est.
+          Our designs strike the right cord with its creativity and futuristic thought processes.
           
           
            </div>
@@ -70,9 +71,9 @@
           
           <p class="wow zoomIn" data-wow-delay="1.1s"> <img src="themes/site_theme/images/icon-10.png"  alt=""></p>
           
-          <h4> Strategy and Execution</h4>
+          <h4> Implementation</h4>
           
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus dolor, convallis sit amet iaculis quis, tempus ut nibh. Fusce gravida finibus est.
+         The ideas from the mind take shape you give your brand its perfect identity.
           
           
            </div>

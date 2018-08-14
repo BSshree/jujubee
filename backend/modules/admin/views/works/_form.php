@@ -43,7 +43,7 @@ $Alltypes = ArrayHelper::map(Work::find()->all(), 'project_type', 'project_type'
                 //'options' => ['placeholder' => 'Category ...', 'multiple' => true],
                 'pluginOptions' => [
                     'tags' => true,
-                    'tokenSeparators' => [',', ' '],
+                    //'tokenSeparators' => [','],
                     'maximumInputLength' => 20,
                     'allowClear' => true,
                 ],
@@ -68,7 +68,7 @@ $Alltypes = ArrayHelper::map(Work::find()->all(), 'project_type', 'project_type'
                 //'options' => ['placeholder' => 'Category ...', 'multiple' => true],
                 'pluginOptions' => [
                     'tags' => true,
-                    'tokenSeparators' => [',', ' '],
+                    //'tokenSeparators' => [',', ' '],
                     'maximumInputLength' => 50,
                     'allowClear' => true,
                 ],

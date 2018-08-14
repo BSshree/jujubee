@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\web\View;
 use yii\widgets\ActiveForm;
 use dosamigos\tinymce\TinyMce;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Page */
@@ -14,23 +15,24 @@ $status = [
 ];
 ?>
 
-<div class="page-form">
-
-    <?php
-    $form = ActiveForm::begin([
-                'id' => 'active-form',
-                'enableClientValidation' => true,
-                'validateOnSubmit' => true,
-                'options' => [
-                    'class' => 'form-horizontal',
-                ],
-                'fieldConfig' => [
-                    'template' => "{label}<div class=\"col-sm-5\">{input}<b style='color: #000;'>{hint}</b><div class=\"errorMessage\">{error}</div></div>",
-                    'labelOptions' => ['class' => 'col-sm-2 control-label'],
-                ],
-                    ]
-    );
-    ?>
+    <div class="row">
+        <div class="col-md-8">
+          
+                <?php
+            $form = ActiveForm::begin([
+                        'id' => 'active-form',
+                        'enableClientValidation' => true,
+                        'validateOnSubmit' => true,
+                        'options' => [
+                            'class' => 'form-horizontal',
+                        ],
+                        'fieldConfig' => [
+                            'template' => "{label}<div class=\"col-sm-10\">{input}<b style='color: #000;'>{hint}</b><div class=\"errorMessage\">{error}</div></div>",
+                            'labelOptions' => ['class' => 'col-sm-2 control-label'],
+                        ],
+                            ]
+            );
+        ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
@@ -64,7 +66,22 @@ $status = [
 <?php ActiveForm::end(); ?>
 
     </div>
-
+           
+        </div>
+        <?php  if (!$model->isNewRecord) {  ?>
+        <div class="col-md-4">
+            <div class="info-box-content">
+             <span class="info-box-text">Preview your changes</span><br>
+              <span class="progress-description">
+                  <a href="http://local.jujubeemedia/<?php echo $model->slug ?>"  class='btn btn-warning'>Preview</a>
+                  </span>
+            </div>
+          </div>
+        <?php } ?>
+        </div>
+      </div>
+    
+    
     <?php
     $script = <<< JS
     jQuery(document).ready(function () { 

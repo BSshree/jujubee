@@ -38,7 +38,7 @@ use yii\bootstrap\Modal;
               <a class="dropdown-item" href="/web">Web</a>
               <a class="dropdown-item" href="/seo">Digital</a>
               <a class="dropdown-item" href="/mobile">Mobile</a>
-              <a class="dropdown-item" href="/outsource">Out Sourcing</a>
+              <!--<a class="dropdown-item" href="/outsource">Out Sourcing</a>-->
             </div>
           </li>
           <li class="menu__item"><a href="/work" class="menu__link">Work</a></li>

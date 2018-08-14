@@ -31,8 +31,8 @@ use yii\widgets\ActiveForm;
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
             <h4 class="mob-hed-center font-pop">Digital</h4>
             <ul>
-              <li><a href="#">About Jujubee</a></li>
-              <li><a href="#">Jobs</a></li>
+              <li><a href="/about">About Jujubee</a></li>
+              <li><a href="/career">Jobs</a></li>
               <li><a href="#">Team</a></li>
               <li><a href="#">Testimonals</a></li>
               <li><a href="#">Blog</a></li>
@@ -41,13 +41,13 @@ use yii\widgets\ActiveForm;
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
             <h4 class="mob-hed-center font-pop">Web</h4>
             <ul>
-              <li><a href="#">UI/UX</a></li>
-              <li><a href="#">Ecommerce</a></li>
-              <li><a href="#">Content Management System</a></li>
-              <li><a href="#">Custom application Development</a></li>
-              <li><a href="#">Android</a></li>
-              <li><a href="#">IOS</a></li>
-              <li><a href="#">App Marketing</a></li>
+                <li><a href="/web#uiux" data-href="#uiux" class="footerweb" >UI/UX</a></li>
+              <li><a href="/web#ecommerce" data-href="#ecommerce"  class="footerweb">Ecommerce</a></li>
+              <li><a href="/web#cms" data-href="#cms"  class="footerweb">Content Management System</a></li>
+              <li><a href="/web#cad" data-href="#cad" class="footerweb">Custom application Development</a></li>
+              <li><a href="/mobile#android" data-href="#android" class="footermobile">Android</a></li>
+              <li><a href="/mobile#ios" data-href="#ios" class="footermobile">IOS</a></li>
+              <li><a href="/mobile#android" data-href="#android" class="footermobile">App Marketing</a></li>
             </ul>
           </div>
           <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mob-none">
@@ -95,3 +95,50 @@ use yii\widgets\ActiveForm;
       <span>Copyright @ 2018 jujubee media. All rights reserved. | Digital Marketing Agency <a href="/terms">Terms & conditions apply</a></span>
     </div>
     </footer>
+<?php 
+$script = <<< JS
+        
+     $(document).ready(function () {
+        
+        $(window).on("load", function () {           
+            var urlHash = window.location.href.split("#")[1];
+                var myarray = ['uiux','ecommerce','cms','cad'];
+                if(jQuery.inArray(urlHash, myarray) !== -1){
+                  $('html,body').animate({
+                      scrollTop: $('#' + urlHash).offset().top + 190
+                  }, 500); 
+                      }else{
+                            $('html,body').animate({
+                              scrollTop: $('#' + urlHash).offset().top - 120
+                          }, 500); 
+                    }
+        });
+        
+        $(document).on('click', '.footerweb', function (event) {
+
+            if(window.location.pathname == '/web'){
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'data-href')).offset().top + 190
+            }, 500);
+            }
+        });
+        
+         $(document).on('click', '.footermobile', function (event) {
+
+            if(window.location.pathname == '/mobile'){
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'data-href')).offset().top - 150
+            }, 500);
+            }
+        });
+        
+      
+    });
+    
+   
+        
+JS;
+$this->registerJs($script, View::POS_END);
+?>

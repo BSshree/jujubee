@@ -1,7 +1,6 @@
 <?php
 
 namespace common\models;
-
 use Yii;
 
 /**
@@ -51,5 +50,5 @@ class Page extends \yii\db\ActiveRecord {
             'updated_at' => 'Updated At',
         ];
     }
-
-}
+    
+    }

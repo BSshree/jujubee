@@ -72,11 +72,11 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionPages($slug) {
-        if ( $pagez = Page::findOne(['slug' => $slug])) {
+        if ( $pagez = Page::findOne(['slug' => $slug])) { //for services page title,desc,keywrd presents so it can be automatically called by main.php
             $formatted_content = Yii::$app->shortcodes->parse($pagez->content);
             return $this->render('/pages/common_page' , ['pagez' => $pagez, 'formatted_content' => $formatted_content]);
         } else {
-            if($slug == 'work'){
+            if($slug == 'work'){ // for work page seo pages are called
                 $works = Work::find()->all();
                 $categories = \yii\helpers\ArrayHelper::map($works, 'category', 'category');
                 return $this->render('/pages/work' , ['works' => $works,'categories' => $categories ]);

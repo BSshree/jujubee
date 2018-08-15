@@ -42,7 +42,7 @@ use yii\bootstrap\Modal;
             </div>
           </li>
           <li class="menu__item"><a href="/work" class="menu__link">Work</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Blogs</a></li>
+          <li class="menu__item"><a href="blog" class="menu__link">Blogs</a></li>
           <li class="menu__item"><a href="/career" class="menu__link">Careers</a></li>
           <!-- <li class="menu__item"><a href="" class="menu__link">Thinking</a></li> -->
           <li class="menu__item"><a href="/contactus" class="menu__link">Contact</a></li>

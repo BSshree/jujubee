@@ -13,6 +13,13 @@ button:focus {
 	outline: 0px dotted !important;
 	outline: 0px auto -webkit-focus-ring-color !important;
 }
+ul{
+	padding: 0px;
+	margin:0px;
+}
+li{
+	list-style: none;
+}
 .btn.focus, .btn:focus {
 	outline: 0;
 	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
@@ -1629,4 +1636,251 @@ animation-name: none;
 }
 .project-details a{
 	    font-weight: 400;
+}
+
+.our-blog{
+	width: 100%;
+	float: left;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+
+.blog-sidebar .sidebar-search form {
+    height: 60px;
+    position: relative;
+}
+.blog-sidebar .sidebar-search form input {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c9c7c7;
+    padding: 0 50px 0 15px;
+    font-size: 16px;
+}
+.blog-sidebar .sidebar-search form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgba(0,0,0,0.4);
+    border: 0px;
+}
+.blog-sidebar .sidebar-box {
+    margin-bottom: 3rem;
+}
+.blog-categories h3{
+	font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.sidebar-recent-post h3{
+	font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.blog-sidebar .blog-categories ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 22px;
+    display: block;
+}
+.blog-sidebar .blog-categories ul li a:hover{
+	color: #f29e38;
+}
+.blog-sidebar .sidebar-recent-post li {
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding: 13px 0 17px 0;
+}
+.blog-sidebar .sidebar-recent-post li a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: rgba(0,0,0,0.9);
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-sidebar .sidebar-recent-post li a:hover{
+	color: #f29e38;
+}
+.blog-sidebar .sidebar-recent-post li span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+}
+
+.our-blog .single-blog .image {
+    background: #152641;
+    overflow: hidden;
+}
+.our-blog .single-blog .image img {
+    width: 100%;
+}
+.our-blog.blog-v3 .single-blog .text {
+    padding: 3rem 0 0 0;
+    margin-bottom: 3rem;
+}
+.our-blog .single-blog .text h6 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #13192d;
+    font-family: 'Poppins', sans-serif;
+}
+.our-blog.blog-v3 .single-blog .text p {
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.our-blog.blog-v3 .single-blog .text h5 a {
+    font-size: 30px;
+    margin: 20px 0px 25px;
+}
+.our-blog .single-blog .text h5 a {
+    font-size: 24px;
+    color: rgb(19, 25, 45);
+    line-height: 41px;
+    font-family: 'Poppins', sans-serif;
+    margin: 12px 0px 15px;
+}
+.our-blog .single-blog .image img{
+	    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.our-blog .single-blog:hover .image img {
+    opacity: 0.6;
+    -webkit-transform: scale3D(1.1,1.1,1);
+    transform: scale3D(1.1,1.1,1);
+    cursor: pointer;
+}
+.our-blog .single-blog:hover h5 a{
+	color: #f29e38;
+}
+.our-blog.blog-with-sidebar .page-pagination {
+    padding-top: 30px;
+}
+.our-blog .page-pagination {
+    text-align: center;
+    padding-top: 0rem;
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+}
+.our-blog .page-pagination li {
+    display: inline-block;
+}
+.our-blog .page-pagination li:last-child a, .our-blog .page-pagination li a:hover, .our-blog .page-pagination li.active a {
+    color: #13192d;
+}
+.our-blog .page-pagination li a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #c9c9c9;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.blog-details .blog-main-post{
+	 font-family: 'Poppins', sans-serif;
+	 font-size: 16px;
+}
+.blog-details .blog-main-post h6 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #13192d;
+    margin: 62px 0 20px 0;
+}
+.blog-details .blog-main-post h3 {
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+.blog-details .blog-main-post p {
+    font-weight: 500;
+    color: rgba(0,0,0,0.65);
+    line-height: 32px;
+}
+.blog-details .blog-main-post h2 {
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: normal;
+    padding: 0 85px;
+    margin: 80px 0 80px 0;
+    position: relative;
+}
+.blog-details .blog-main-post h2:before {
+    content: '';
+    width: 55px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+.blog-details .blog-main-post h5 {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 35px;
+    color: #000000;
+}
+.blog-details .tag-option {
+    margin: 55px 0 130px 0;
+     font-family: 'Poppins', sans-serif;
+}
+.blog-details .tag-option ul li {
+    display: inline-block;
+    font-weight: 500;
+    color: #151515;
+    line-height: 35px;
+    margin-top: 30px;
+}
+.blog-details .tag-option ul.float-left li a {
+    margin: 0;
+}
+.blog-details .tag-option ul li a {
+    font-weight: normal;
+    color: #9a9a9a;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.blog-details .tag-option ul li a:hover{
+	color: #f29e38;
+}
+.comment-form{
+	margin-top: 2rem;
+}
+.leave-comment{
+	font-family: 'Poppins', sans-serif;
+}
+.leave-comment p{
+	font-weight: 500;
+    font-size: 18px;
+    margin-top: 1rem;
+    color: rgba(0,0,0,0.65);
+}
+.form-control {
+    height: 60px;
+}
+textarea.form-control {
+    height: auto;
+}
+.hvr-trim-two{
+    width: 176px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background: #f29e38;
+    border:0px;
+}
+.hvr-trim-two:hover{
+	background-color: #f7c644 !important;
+    border-color: #f7c644 !important;
+    color: #ffffff;
+    cursor: pointer;
 }

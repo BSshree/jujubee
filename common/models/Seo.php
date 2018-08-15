@@ -32,7 +32,7 @@ class Seo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['url_path','meta_values'], 'required'],
+           // [['url_path','meta_values'], 'required'],
             [['url_path'], 'string', 'max' => 464],
             [['meta_values'], 'string', 'max' => 5564],
         ];

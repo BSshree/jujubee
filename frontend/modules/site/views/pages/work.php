@@ -1,6 +1,6 @@
 <section class="banner banner-work">
-    <h2>Our Works</h2>
-    <h4><a href="/"> HOME </a> / OUR WORKS</h4>
+    <h2>Portfolio</h2>
+    <!--<h4><a href="/"> HOME </a> / OUR WORKS</h4>-->
 </section>
 
 <section class="work">
@@ -8,14 +8,14 @@
         <div class="row height-work grid text-left">
             <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <h5>OUR WOKS</h5>
-                <h2>We’ve done lot’s of work, Let’s Check some from here</h2>
+                <h2>Our work speaks for us!</h2>
             </div>
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <!--<button class="btn btn-default filter-button" data-filter="all">All</button>-->
                 
-                <?php foreach ($categories as $category) {?>
-                <button class="btn btn-default filter-button" data-filter="<?php echo strtolower($category); ?>"><?php echo ucwords($category)?></button>
-                <?php } ?>
+                <?php //foreach ($categories as $category) {?>
+                <!--<button class="btn btn-default filter-button" data-filter="<?php //echo strtolower($category); ?>"><?php //echo ucwords($category)?></button>-->
+                <?php //} ?>
             </div>
             <?php
             foreach ($works as $work){?>
@@ -24,8 +24,8 @@
                 <a href="#" data-toggle="modal" data-target="#workModal" data-category="<?php echo strtolower($work->category); ?>" data-projectdate="<?php echo strtolower($work->project_date); ?>"  data-projecttype="<?php echo strtolower($work->project_type); ?>" data-projecttitle="<?php echo strtolower($work->title); ?>" data-projectlink="<?php echo ($work->link); ?>">
                     <figure class="effect-oscar"> <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
                         <figcaption>
-                            <p class="pro-txt"> <?php echo strtoupper($work->category); ?> <br/>
-                                <span class="btn motivate-link"> Bespoke Web design </span></p>
+                            <p class="pro-txt"> <?php echo strtoupper($work->title); ?> <br/>
+                                <!--<span class="btn motivate-link"> Bespoke Web design </span></p>-->
                         </figcaption>
                     </figure>
                 </a>
@@ -46,19 +46,20 @@
                         </button>
                     </div>
                     <div class="modal-body modal-work">
-                        <h4 class="worktitle" style="text-transform: capitalize"></h4>
+                        <h4 class="worktitle" style="text-transform: uppercase"></h4>
                         <div class="project-details">
-                            <div class="project-date">
+<!--                            <div class="project-date">
                                 <p>Project Date:<span class="workprojectdate"></span></p>
-                            </div>
-                            <p>Project Type: <span class="workprojecttype"  style="text-transform: capitalize"> </span></p>
-                            <p>Project Link: <a class="worklink" href="" target="2"></a></p>
+                            </div>-->
+                            <p>Technology: <span class="workprojecttype"  style="text-transform: capitalize"> </span></p>
+                            <p>Website Link: <a class="worklink" href="" target="2"></a></p>
                         </div>
                         <div id="Projects" class="owl-carousel owl-theme slider-project">
                             <div class="item">
-                                <img src="themes/site_theme/images/project1.jpg" >
+                                <!--<img src="themes/site_theme/images/project1.jpg" >-->
+                                <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
                             </div>
-                            <div class="item">
+<!--                            <div class="item">
                                 <img src="themes/site_theme/images/project2.jpg" >
                             </div>
                             <div class="item">
@@ -66,7 +67,7 @@
                             </div>
                             <div class="item">
                                 <img src="themes/site_theme/images/about-us.jpg" >
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>

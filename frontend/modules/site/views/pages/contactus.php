@@ -2,7 +2,7 @@
 
     <section class="banner banner-contact">
          <h2>Contact US</h2>
-         <h4><a href="index.html"> HOME </a> / CONTACT</h4>
+         <!--<h4><a href="index.html"> HOME </a> / CONTACT</h4>-->
     </section>
 
     <section class="help-us">
@@ -53,7 +53,7 @@
                         Duraisamy Nagar, Near Corporation Park,<br/>
                         Bye-Pass Road,
                         Madurai-625016 <br/>
-                        +91 98948 37443</P>
+                        +91 99528 70443</P>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 contact-map-box border-box wow zoomIn animated" data-wow-delay=".6s" style="visibility: visible; animation-name: zoomIn;">
                      <img src="themes/site_theme/images/wilmington.png">

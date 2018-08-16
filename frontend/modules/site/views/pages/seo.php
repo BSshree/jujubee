@@ -4,12 +4,12 @@
     </section>
 
 
-    <section class="services-detail">
+    <section class="services-detail services-seo">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 service-web">
-            <h2>PREMIUM DIGITAL MARKETING SERVICES</h2>
-            <p>With a decade of experience as a digital marketing agency, our digital marketing experts analyze your website design and provide solutions based on the latest updates to rank your website on the first page of the search results. “If it's not on the first page..it doesn’t exist!” As a profound digital marketing team, we understand your business objectives and help to showcase your website to the right people at the right time and ensure conversions.</p>
+            <h2>Premium digital marketing services</h2>
+            <p style="font-size: 18px">With a decade of experience as a digital marketing agency, our digital marketing experts analyze your website design and provide solutions based on the latest updates to rank your website on the first page of the search results. “If it's not on the first page..it doesn’t exist!” As a profound digital marketing team, we understand your business objectives and help to showcase your website to the right people at the right time and ensure conversions.</p>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <img src="themes/site_theme/images/digi.jpg" alt="">

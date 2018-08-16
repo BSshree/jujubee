@@ -21,7 +21,7 @@ use yii\bootstrap\Modal;
         <div class="menu__brand">
               <p><img src="themes/site_theme/images/logo.png" class="img-header"></p>
               <a href="#" class="header-menu menu-contact">Jujubee@gmail.com</a>
-              <p class="header-menu menu-contact">+202-277-3894</p>
+              <p class="header-menu menu-contact">+91 99528 70443</p>
               <ul class="list-unstyled list-inline social text-center mob-footer-icons menu-contact">
                 <li class="list-inline-item "><a href="#"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
                 <li class="list-inline-item "><a href="#"><i class="fa fa-twitter icon-footer-mob"></i></a></li>
@@ -41,11 +41,11 @@ use yii\bootstrap\Modal;
               <!--<a class="dropdown-item" href="/outsource">Out Sourcing</a>-->
             </div>
           </li>
-          <li class="menu__item"><a href="/work" class="menu__link">Work</a></li>
+          <li class="menu__item"><a href="/work" class="menu__link">Portfolio</a></li>
           <li class="menu__item"><a href="blog" class="menu__link">Blogs</a></li>
           <li class="menu__item"><a href="/career" class="menu__link">Careers</a></li>
           <!-- <li class="menu__item"><a href="" class="menu__link">Thinking</a></li> -->
-          <li class="menu__item"><a href="/contactus" class="menu__link">Contact</a></li>
+          <li class="menu__item"><a href="/contactus" class="menu__link">Get In Touch</a></li>
         </ul>
       </nav>
     </header>

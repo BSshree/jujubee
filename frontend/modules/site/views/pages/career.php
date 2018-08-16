@@ -1,6 +1,6 @@
     <section class="banner banner-careers">
          <h2>Careers</h2>
-         <h4><a href="index.html"> HOME </a> / CAREERS</h4>
+         <!--<h4><a href="index.html"> HOME </a> / CAREERS</h4>-->
     </section>
 
 

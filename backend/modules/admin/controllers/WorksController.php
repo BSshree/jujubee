@@ -86,11 +86,11 @@ class WorksController extends Controller {
                 $model->save();
             }
             if ($model->project_image) {
-                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $file_name = str_replace(' ', '-', $model->project_image->baseName);
                 $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->project_image->saveAs($folder . '/' . $randno . $model->project_image->baseName . '.' . $model->project_image->extension);
-                $model->project_image = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->project_image = $randno . $model->project_image->baseName . '.' . $model->project_image->extension;
                 $model->save();
             }
             return $this->redirect(['index']);
@@ -131,11 +131,11 @@ class WorksController extends Controller {
                 $model->save();
             }
             if ($model->project_image) {
-                $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
+                $file_name = str_replace(' ', '-', $model->project_image->baseName);
                 $randno = rand(11111, 99999);
                 $folder = Yii::$app->basePath . '/web/uploads/';
                 $model->project_image->saveAs($folder . '/' . $randno . $model->project_image->baseName . '.' . $model->project_image->extension);
-                $model->project_image = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
+                $model->project_image = $randno . $model->project_image->baseName . '.' . $model->project_image->extension;
                 $model->save();
                 if (!empty($old_pro_image)) {
                     unlink(Yii::$app->basePath . '/web/uploads/' . $old_pro_image);

@@ -103,7 +103,7 @@ $this->title = 'Jujubee Media';
                 <h2 class="project-head2">A sneak-peek into our fabulous portfolio!</h2>
             </div>
             <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <button type="button" class="btn btn-warning btn-projects">SEE ALL PROJECTS</button>
+                <button type="button" class="btn btn-warning btn-projects"><a href="/work" style="color: black">SEE ALL PROJECTS</a></button>
             </div>
         </div>
     </div>
@@ -111,19 +111,19 @@ $this->title = 'Jujubee Media';
     <div class="container-fluid">
         <div id="Clients" class="owl-carousel owl-theme slider-project">
             <div class="item wow fadeInRight" data-wow-delay=".6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/slider1.jpg" >
+                <img src="themes/site_theme/images/opti-rep.jpg" >
             </div>
             <div class="item wow fadeInRight" data-wow-delay=".9s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/slider2.jpg">
+                <img src="themes/site_theme/images/dots-traffic-schools.jpg">
             </div>
             <div class="item wow fadeInRight" data-wow-delay="1.1s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/slider3.jpg">
+                <img src="themes/site_theme/images/web-wizard-usa.jpg">
             </div>
             <div class="item wow fadeInRight" data-wow-delay="1.4s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/slider4.jpg">
+                <img src="themes/site_theme/images/american-institute.jpg">
             </div>
             <div class="item wow fadeInRight" data-wow-delay="1.7s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/slider5.jpg">
+                <img src="themes/site_theme/images/3i.jpg">
             </div>
         </div>
     </div>
@@ -136,22 +136,22 @@ $this->title = 'Jujubee Media';
                         <img src="themes/site_theme/images/optiguide.jpg" class="img-client">
                     </div>
                     <div class="col-md-4">
-                        <img src="themes/site_theme/images/clientlogo2.png" class="img-client">
+                        <img src="themes/site_theme/images/america.png" class="img-client">
                     </div>
                     <div class="col-md-4">
-                        <img src="themes/site_theme/images/clientlogo3.png" class="img-client">
+                        <img src="themes/site_theme/images/tictac.png" class="img-client">
                     </div>
                     <div class="col-md-4">
-                        <img src="themes/site_theme/images/clientlogo4.png" class="img-client">
+                        <img src="themes/site_theme/images/maxvehicle.png" class="img-client">
                     </div>
                     <div class="col-md-4">
-                        <img src="themes/site_theme/images/clientlogo5.png" class="img-client">
+                        <img src="themes/site_theme/images/adaptek.png" class="img-client">
                     </div>
                     <div class="col-md-4">
-                        <img src="themes/site_theme/images/clientlogo6.png" class="img-client">
+                        <img src="themes/site_theme/images/brook.png" class="img-client">
                     </div>
                     <div class="col-md-4">
-                        <img src="themes/site_theme/images/clientlogo7.png"class="img-client">
+                        <img src="themes/site_theme/images/3i_sap.png"class="img-client">
                     </div>
                 </div>
             </div>

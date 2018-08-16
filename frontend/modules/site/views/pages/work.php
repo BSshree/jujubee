@@ -57,7 +57,7 @@
                         <div id="Projects" class="owl-carousel owl-theme slider-project">
                             <div class="item">
                                 <!--<img src="themes/site_theme/images/project1.jpg" >-->
-                                <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
+                                <img src="backend/web/uploads/<?php echo $work->project_image; ?>" alt=""/>
                             </div>
 <!--                            <div class="item">
                                 <img src="themes/site_theme/images/project2.jpg" >

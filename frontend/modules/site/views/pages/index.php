@@ -85,7 +85,7 @@ $this->title = 'Jujubee Media';
         <div class="about-head3">
             <img src="themes/site_theme/images/about-icons.png" class="img-about " >
             <h4>Best Digital Marketing Agency in Madurai</h4>
-            <p>With a decade of experience in advanced web developement, and a staggering work force of talented Developers, Analysts, Designers & Digital Marketers.
+            <p>With a decade of experience in advanced web development, and a staggering work force of talented Developers, Analysts, Designers & Digital Marketers.
                 We have accomplished more than what we had ventured out for. Our Certified professionals and Dedicated Project Managers make sure to leave no stone unturned to give your websites the speed, style, functionality & reach your business needs.</p>
         </div>
     </div>

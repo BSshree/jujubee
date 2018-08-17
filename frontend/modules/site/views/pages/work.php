@@ -24,8 +24,8 @@
                 <a href="#" data-toggle="modal" data-target="#workModal" data-category="<?php echo strtolower($work->category); ?>" data-projectdate="<?php echo strtolower($work->project_date); ?>"  data-projecttype="<?php echo strtolower($work->project_type); ?>" data-projecttitle="<?php echo strtolower($work->title); ?>" data-projectlink="<?php echo ($work->link); ?>">
                     <figure class="effect-oscar"> <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
                         <figcaption>
-                            <p class="pro-txt"> <?php echo strtoupper($work->title); ?> <br/>
-                                <!--<span class="btn motivate-link"> Bespoke Web design </span></p>-->
+                            <p class="pro-txt" style="line-height: 1.2em;"> <?php echo strtoupper($work->title); ?><br/>
+                                <!--<span class="btn motivate-link" ><?php //echo strtoupper($work->title); ?>  </span></p>-->
                         </figcaption>
                     </figure>
                 </a>

@@ -33,7 +33,6 @@ return [
             'class' => 'tpoxa\shortcodes\Shortcode',
             'callbacks' => [
                 'blockcode' => ['frontend\widgets\Blockcode', 'widget']
-                
             ]
         ],
         'user' => [
@@ -66,6 +65,8 @@ return [
             'enableStrictParsing' => true,
             'rules' => [
                 '/' => 'site/site/index',
+                'contacts' => 'site/site/contacts',
+                'career' => 'site/site/career',
                 '/<slug:[a-zA-Z0-9-]+>' => 'site/site/pages',
 //                [
 //                    'pattern' => '/about',

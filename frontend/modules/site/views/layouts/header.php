@@ -23,10 +23,10 @@ use yii\bootstrap\Modal;
               <a href="#" class="header-menu menu-contact">Jujubee@gmail.com</a>
               <p class="header-menu menu-contact">+91 99528 70443</p>
               <ul class="list-unstyled list-inline social text-center mob-footer-icons menu-contact">
-                <li class="list-inline-item "><a href="#"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
-                <li class="list-inline-item "><a href="#"><i class="fa fa-twitter icon-footer-mob"></i></a></li>
-                <li class="list-inline-item "><a href="#"><i class="fa fa-linkedin icon-footer-mob"></i></a></li>
-                <li class="list-inline-item "><a href="#"><i class="fa fa-instagram icon-footer-mob"></i></a></li>
+                  <li class="list-inline-item "><a href="https://www.facebook.com/jujubeemedia" target="1"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
+                <li class="list-inline-item "><a href="https://twitter.com/jujubeemedia" target="1"><i class="fa fa-twitter icon-footer-mob"></i></a></li>
+                <li class="list-inline-item "><a href="https://www.linkedin.com/company/14402872/" target="1"><i class="fa fa-linkedin icon-footer-mob"></i></a></li>
+                <!--<li class="list-inline-item "><a href="#"><i class="fa fa-instagram icon-footer-mob"></i></a></li>-->
               </ul>
         </div>
        <ul class="menu__list" id="menu">
@@ -43,7 +43,7 @@ use yii\bootstrap\Modal;
           </li>
           <li class="menu__item"><a href="/work" class="menu__link">Portfolio</a></li>
           <!--<li class="menu__item"><a href="blog" class="menu__link">Blogs</a></li>-->
-          <li class="menu__item"><a href="/career" class="menu__link">Careers</a></li>
+          <li class="menu__item"><a href="/careers" class="menu__link">Careers</a></li>
           <!-- <li class="menu__item"><a href="" class="menu__link">Thinking</a></li> -->
           <li class="menu__item"><a href="/contactus" class="menu__link">Get In Touch</a></li>
         </ul>

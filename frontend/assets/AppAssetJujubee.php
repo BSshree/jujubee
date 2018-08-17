@@ -16,6 +16,7 @@ class AppAssetJujubee extends AssetBundle {
         'css/animate.css',
         'css/style.css',
         'css/responsive.css',
+        'css/custom.css',
         'https://fonts.googleapis.com/icon?family=Material+Icons',
         'css/owl.carousel.min.css',
         'css/owl.theme.default.min.css',
@@ -30,6 +31,7 @@ class AppAssetJujubee extends AssetBundle {
         'js/main.js',
         'js/owl.carousel.min.js',
         'js/custom.js',
+        'js/jquery.validate.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

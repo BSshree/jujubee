@@ -80,6 +80,8 @@
                     <li><a href="/webpanel/admin/clients/index"><i class="fa fa-circle-o"></i> Client</a></li>
                     <li><a href="/webpanel/admin/blocks/index"><i class="fa fa-circle-o"></i> HTML Blocks</a></li>
                     <li><a href="/webpanel/admin/works/index"><i class="fa fa-circle-o"></i> Portfolio</a></li>
+                    <li><a href="/webpanel/admin/contactus/index"><i class="fa fa-circle-o"></i> Contact Us</a></li>
+                    <li><a href="/webpanel/admin/careers/index"><i class="fa fa-circle-o"></i> Carrers</a></li>
                 </ul>
             </li>
             <!--        <li class="treeview">

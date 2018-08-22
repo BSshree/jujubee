@@ -60,15 +60,16 @@
                         Duraisamy Nagar, Near Corporation Park,<br/>
                         Bye-Pass Road,
                         Madurai-625016 <br/>
-                        +91 99528 70443</P>
+                         +91 9894837443</P>
                 </div>
-<!--                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 contact-map-box border-box wow zoomIn animated" data-wow-delay=".6s" style="visibility: visible; animation-name: zoomIn;">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 contact-map-box border-box wow zoomIn animated" data-wow-delay=".6s" style="visibility: visible; animation-name: zoomIn;">
                      <img src="themes/site_theme/images/wilmington.png">
-                     <h2>Wilmington, USA</h2>
-                    <P>3310 Wrightsville Ave.<br/> Wilmington, NC 28403 <br/>
-                        +1 910-745-0404 </P>
+                     <h2>Bangalore, India </h2>
+                    <P> Indira nagar,<br/>
+                        Bangalore<br/>
+                        +91 9952870443</P>
                     
-                </div>-->
+                </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 contact-map-box wow zoomIn animated" data-wow-delay=".9s" style="visibility: visible; animation-name: zoomIn;">
                      <img src="themes/site_theme/images/Selangor.png">
                      <h2>Selangor,Malaysia</h2>

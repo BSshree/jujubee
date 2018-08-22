@@ -10,24 +10,22 @@ use common\models\Work;
 /**
  * WorkSearch represents the model behind the search form of `common\models\Work`.
  */
-class WorkSearch extends Work
-{
+class WorkSearch extends Work {
+
     /**
      * {@inheritdoc}
      */
-    public function rules()
-    {
+    public function rules() {
         return [
-            [['work_id'], 'integer'],
-            [['category', 'title', 'slug', 'project_date', 'project_type', 'link', 'thumbnail'], 'safe'],
+                [['work_id'], 'integer'],
+                [['category', 'title', 'slug', 'project_date', 'project_type', 'link', 'thumbnail'], 'safe'],
         ];
     }
 
     /**
      * {@inheritdoc}
      */
-    public function scenarios()
-    {
+    public function scenarios() {
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
@@ -39,15 +37,15 @@ class WorkSearch extends Work
      *
      * @return ActiveDataProvider
      */
-    public function search($params)
-    {
+    public function search($params) {
         $query = Work::find();
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'pagination' => array('pagesize' => 15),
+            //'sort' => ['defaultOrder' => ['work_id' => SORT_ASC]],
+            'pagination' => array('pagesize' => 20),
         ]);
 
         $this->load($params);
@@ -64,13 +62,14 @@ class WorkSearch extends Work
         ]);
 
         $query->andFilterWhere(['like', 'category', $this->category])
-            ->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'slug', $this->slug])
-            ->andFilterWhere(['like', 'project_date', $this->project_date])
-            ->andFilterWhere(['like', 'project_type', $this->project_type])
-            ->andFilterWhere(['like', 'link', $this->link])
-            ->andFilterWhere(['like', 'thumbnail', $this->thumbnail]);
+                ->andFilterWhere(['like', 'title', $this->title])
+                ->andFilterWhere(['like', 'slug', $this->slug])
+                ->andFilterWhere(['like', 'project_date', $this->project_date])
+                ->andFilterWhere(['like', 'project_type', $this->project_type])
+                ->andFilterWhere(['like', 'link', $this->link])
+                ->andFilterWhere(['like', 'thumbnail', $this->thumbnail]);
 
         return $dataProvider;
     }
+
 }

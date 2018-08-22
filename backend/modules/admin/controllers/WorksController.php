@@ -80,7 +80,7 @@ class WorksController extends Controller {
             if ($model->thumbnail) {
                 $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
                 $randno = rand(11111, 99999);
-                $folder = Yii::$app->basePath . '/web/uploads/';
+                $folder = Yii::$app->basePath . '/web/uploads';
                 $model->thumbnail->saveAs($folder . '/' . $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
                 $model->thumbnail = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
                 $model->save();
@@ -88,7 +88,7 @@ class WorksController extends Controller {
             if ($model->project_image) {
                 $file_name = str_replace(' ', '-', $model->project_image->baseName);
                 $randno = rand(11111, 99999);
-                $folder = Yii::$app->basePath . '/web/uploads/';
+                $folder = Yii::$app->basePath . '/web/uploads';
                 $model->project_image->saveAs($folder . '/' . $randno . $model->project_image->baseName . '.' . $model->project_image->extension);
                 $model->project_image = $randno . $model->project_image->baseName . '.' . $model->project_image->extension;
                 $model->save();
@@ -119,7 +119,7 @@ class WorksController extends Controller {
             if ($model->thumbnail) {
                 $file_name = str_replace(' ', '-', $model->thumbnail->baseName);
                 $randno = rand(11111, 99999);
-                $folder = Yii::$app->basePath . '/web/uploads/';
+                $folder = Yii::$app->basePath . '/web/uploads';
                 $model->thumbnail->saveAs($folder . '/' . $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension);
                 $model->thumbnail = $randno . $model->thumbnail->baseName . '.' . $model->thumbnail->extension;
                 $model->save();
@@ -133,7 +133,7 @@ class WorksController extends Controller {
             if ($model->project_image) {
                 $file_name = str_replace(' ', '-', $model->project_image->baseName);
                 $randno = rand(11111, 99999);
-                $folder = Yii::$app->basePath . '/web/uploads/';
+                $folder = Yii::$app->basePath . '/web/uploads';
                 $model->project_image->saveAs($folder . '/' . $randno . $model->project_image->baseName . '.' . $model->project_image->extension);
                 $model->project_image = $randno . $model->project_image->baseName . '.' . $model->project_image->extension;
                 $model->save();

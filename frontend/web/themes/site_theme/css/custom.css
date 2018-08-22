@@ -30,3 +30,18 @@ font-family:sans-serif;
    color:#68b716;
    font-weight: 600;
 }
+.work-text-center {
+	color: #000000;
+	font-size: 36px !important;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+}
+.help-block{
+    color:red; 
+}
+.mainpage-subtitle{
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+}

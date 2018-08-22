@@ -8,7 +8,7 @@ use yii\bootstrap\Modal;
 
 <header class="header header-cont">
        <div class="container"> 
-      <a href="/"><img src="themes/site_theme/images/logo.png" ></a>
+      <a href="/"><img src="themes/site_theme/images/logonew.png" ></a>
       <div class="burger">
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
@@ -19,13 +19,14 @@ use yii\bootstrap\Modal;
 
       <nav class="menu">
         <div class="menu__brand">
-              <p><img src="themes/site_theme/images/logo.png" class="img-header"></p>
-              <a href="#" class="header-menu menu-contact">Jujubee@gmail.com</a>
+              <p><img src="themes/site_theme/images/logonew.png" class="img-header"></p>
+              <!--<a href="#" class="header-menu menu-contact">Jujubee@gmail.com</a>-->
               <p class="header-menu menu-contact">+91 99528 70443</p>
               <ul class="list-unstyled list-inline social text-center mob-footer-icons menu-contact">
                   <li class="list-inline-item "><a href="https://www.facebook.com/jujubeemedia" target="1"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
                 <li class="list-inline-item "><a href="https://twitter.com/jujubeemedia" target="1"><i class="fa fa-twitter icon-footer-mob"></i></a></li>
                 <li class="list-inline-item "><a href="https://www.linkedin.com/company/14402872/" target="1"><i class="fa fa-linkedin icon-footer-mob"></i></a></li>
+                <li class="list-inline-item "><a href="https://plus.google.com/u/0/b/106177774632969723573/" target="1"><i class="fa fa-google-plus icon-footer-mob"></i></a></li>
                 <!--<li class="list-inline-item "><a href="#"><i class="fa fa-instagram icon-footer-mob"></i></a></li>-->
               </ul>
         </div>

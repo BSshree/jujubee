@@ -32,10 +32,9 @@ use yii\widgets\ActiveForm;
                 <h4 class="mob-hed-center font-pop">Digital</h4>
                 <ul>
                     <li><a href="/about">About Jujubee</a></li>
-                    <li><a href="/careers">Jobs</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Testimonals</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/work">Portfolio</a></li>
+                    <li><a href="/contactus">Get In Touch</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
@@ -79,10 +78,10 @@ use yii\widgets\ActiveForm;
                     <h2>Madurai, India</h2>
                     <p>+91 99528 70443  </p>
                 </div>
-                <!--          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <h2>Wilmington, USA </h2>
-                            <p>+1 910-745-0404 </p>
-                          </div>-->
+                          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <h2>Bangalore, India  </h2>
+                            <p> +91 9952870443 </p>
+                          </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h2>Selangor,Malaysia</h2>
                     <p>+60109101103 </p>
@@ -101,7 +100,7 @@ $careers = Yii::$app->getUrlManager()->createUrl("site/site/career");
 $script = <<< JS
         
      $(document).ready(function () {
-        
+
         $(window).on("load", function () {           
             var urlHash = window.location.href.split("#")[1];
                 var myarray = ['uiux','ecommerce','cms','cad'];
@@ -136,9 +135,18 @@ $script = <<< JS
             }
         });
         
+        $('#careerModal').on('show.bs.modal', function(e){
+            var button = $(e.relatedTarget);
+            var title = button.data('title');
+            var designation = button.data('designation');
+            var modal = $(this);
+            modal.find('.modal-title').text(title);
+            modal.find('[name="designation"]').val(title);
+            modal.find('.modal-body .career-content').html($('#'+designation+'-content .modal-content').html());
+        });
+        
       
  
-        
          $("#contactusform").validate({
         rules: {
               'name': {
@@ -188,25 +196,22 @@ $script = <<< JS
                     form: 'contact',
                      },
                 success: function(data) {
-                if(data == "success"){
-                 $("#successrequest").html( 'Your request has been send sucessfully!!' );
-                  setTimeout(function(){  $("#successrequest").hide("slow"); $("#successrequest").html("");
-                   $(".request-show").hide(); }, 5000);
-                  $('#contactusform')[0].reset(); 
-                  $(".loading-image").hide(); 
-                }
+                    if(data == "success"){
+                     $("#successrequest").html( 'Your request has been send sucessfully!!' );
+                      setTimeout(function(){  $("#successrequest").hide("slow"); $("#successrequest").html("");
+                       $(".request-show").hide(); }, 5000);
+                      $('#contactusform')[0].reset(); 
+                      $(".loading-image").hide(); 
+                    }
                 
                 },
             });
 
            }     
-                
-                
-               
     });
    
                 
-    $("#careerform1").validate({
+    $("#career_form").validate({
         rules: {
               'name': {
                      required: true,
@@ -226,6 +231,10 @@ $script = <<< JS
                 'know': {
                     required: true,
 		},
+//                'resume': {
+//                    required: true,
+//                    //extension: "docx|rtf|doc|pdf",
+//		}
            },
         messages: {
                 'name': {
@@ -243,121 +252,39 @@ $script = <<< JS
                 'know': {
                     required :"Please Enter Your Reference",
 		},
+//                 'resume': {
+//                    required :"Please Submit Your Resume",
+//                   // extension:"Select valid file format",
+//		}
             },
+                submitHandler: function(form) {
+                 var form_data =  new FormData($("#career_form")[0]);               
+                $(".careers-show-buffer").show();   
                 
-              submitHandler: function(form) {
-       
-                var na = $('#career1-name').val();
-                var em = $('#career1-email').val();
-                var ph = $('#career1-phone').val();
-                var kn = $('#career1-know').val();
-                var mes = $('#career1-mess').val();
-                var hid = $('#career1-hidden-val').val();
-                var file = $('#career1-resume').val();
-            
-            $(".career1-show").show();   
-                
-            $.ajax({
-       
-                type: 'POST',
-                url: '{$careers}',
-                data:{
-                    na1:na, em1:em, ph1:ph, kn1:kn, mes1:mes, hid1:hid,
-                    form: 'career',
-                     },
-                success: function(data) {
-                if(data == "success"){
-                 $("#successcareer1").html( 'Your request has been send sucessfully!!' );
-                  setTimeout(function(){  $("#successcareer1").hide("slow"); $("#successcareer1").html("");
-                   $(".career1-show").hide();
-                   $('#careerModal1').modal('hide');}, 5000);
-                  $('#careerform1')[0].reset(); 
-                  $(".loading-image").hide(); 
-                }
-                
-                },
-            });
-
+                $.ajax({
+                    url: '{$careers}',
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: form_data,                         
+                    type: 'post',
+                    success: function(data) {
+                        if(data == "success"){
+                            $(".loading-image").hide();
+                            $("#successcareers").html( 'Your request has been send sucessfully!!' );
+                            setTimeout(function(){  $("#successcareers").hide("slow"); $("#successcareers").html("");
+                            $('#career_form')[0].reset(); 
+                            $(".careers-show-buffer").hide();
+                            $('#careerModal').modal('hide');
+                               }, 5000);
+                        }
+                    },
+                });
+             return false;
            }     
         });
                 
-           
-   
-   $("#careerform2").validate({
-        rules: {
-              'name': {
-                     required: true,
-		},
-		'phone': {
-                    required:true,
-                    number:true,
-		},
-		'email': {
-                    required: true,
-                    email: true
-                 },
-                'know': {
-                    required: true,
-		},
-                'mess': {
-                    required: true,
-		},
-           },
-        messages: {
-                'name': {
-                    required :"Please Enter Your Name",
-		},
-		'phone':{
-                    required: "Please Enter Your Phone Number",
-                    number: "Please Enter Valid Phone Number"
-		},
-                'email': "Please Enter a Valid Email Address",
-                'know': {
-                    required :"Please Enter Your Reference",
-		},
-                 'mess': {
-                    required :"Please Enter Your Message",
-		},
-            },
-                
-              submitHandler: function(form) {
-       
-                var na = $('#career2-name').val();
-                var em = $('#career2-email').val();
-                var ph = $('#career2-phone').val();
-                var kn = $('#career2-know').val();
-                var mes = $('#career2-mess').val();
-                var hid1 = $('#career2-hidden-val').val();
-            
-            $(".career-show").show();   
-                
-            $.ajax({
-       
-                type: 'POST',
-                url: '{$careers}',
-                data:{
-                    na1:na, em1:em, ph1:ph, kn1:kn, mes1:mes,  hid1:hid,
-                    form: 'career',
-                     },
-                success: function(data) {
-                if(data == "success"){
-                 $("#successcareer2").html( 'Your request has been send sucessfully!!' );
-                  setTimeout(function(){  $("#successcareer2").hide("slow"); $("#successcareer2").html("");
-                   $(".career-show").hide();
-                   $('#careerModal2').modal('hide');}, 5000);
-                  $('#careerform2')[0].reset(); 
-                  $(".loading-image").hide(); 
-                }
-                
-                },
-            });
-
-           }     
-                
-                
-               
-    });
- 
+        
   });
     
         

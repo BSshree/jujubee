@@ -22,6 +22,8 @@ class CareerForm extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    
+    public $designation;
     public static function tableName()
     {
         return 'careerform';
@@ -33,8 +35,8 @@ class CareerForm extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'phone', 'email', 'know_by', 'message',], 'required'],
-            [['name', 'phone', 'email', 'know_by', 'message', 'resume'], 'string'],
+            //[['name', 'phone', 'email', 'know_by', 'message'], 'required'],
+            [['name', 'phone', 'email', 'know_by', 'message'], 'string'],
             ['email', 'email'],
             [['resume'], 'file', 'extensions' => 'pdf, doc'],
             [['created_at', 'updated_at'], 'integer'],

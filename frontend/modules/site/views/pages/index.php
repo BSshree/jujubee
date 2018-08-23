@@ -14,8 +14,11 @@ $this->title = 'Jujubee Media';
             <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 slider-text d" >
               <!--<p class="slider-text-para wow fadeInRight pull-right animate">Leading Full Service</p>-->
                 <h1 class="cd-headline letters type wow fadeInLeft animated" data-wow-delay=".5s">
-                    Web Design & Digital Marketing Agency in Madurai
+                     Digital Marketing 2.0
                 </h1>
+                <h3 class="cd-headline letters type wow fadeInLeft animated mainpage-subtitle" data-wow-delay=".8s" style="font-color: white">
+                     The New Face of Digital Marketing Driven by Next-Gen Technologies and Advanced Web Development
+                </h3>
                 <button type="button" class="btn btn-warning btn-explore wow zoomIn" data-wow-delay=".8s"><a href="/contactus" style="color:black"> Get In Touch<img src="themes/site_theme/images/right-arrow.png" class="img-right-arrow"></a></button>
             </div>
         </div>
@@ -75,7 +78,7 @@ $this->title = 'Jujubee Media';
 
 
     <div class="about-bg">
-        <a href="#"><img src="themes/site_theme/images/explore-btn.png" class="img-explore-btn wow fadeInRight"  data-wow-delay=".6s" style="visibility: hidden; animation-name: none;"></a>
+        <a href="/about"><img src="themes/site_theme/images/explore-btn.png" class="img-explore-btn wow fadeInRight"  data-wow-delay=".6s" style="visibility: hidden; animation-name: none;"></a>
     </div>
 
 
@@ -111,19 +114,19 @@ $this->title = 'Jujubee Media';
     <div class="container-fluid">
         <div id="Clients" class="owl-carousel owl-theme slider-project">
             <div class="item wow fadeInRight" data-wow-delay=".6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/opti-rep.jpg" >
+                <img src="themes/site_theme/images/new-american-institute.jpg" >
             </div>
             <div class="item wow fadeInRight" data-wow-delay=".9s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/dots-traffic-schools.jpg">
+                <img src="themes/site_theme/images/new-limo-king.jpg">
             </div>
             <div class="item wow fadeInRight" data-wow-delay="1.1s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/web-wizard-usa.jpg">
+                <img src="themes/site_theme/images/new-dots-traffic-schools.jpg">
             </div>
             <div class="item wow fadeInRight" data-wow-delay="1.4s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/american-institute.jpg">
+                <img src="themes/site_theme/images/new-web-wizard-usa.jpg">
             </div>
             <div class="item wow fadeInRight" data-wow-delay="1.7s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                <img src="themes/site_theme/images/3i.jpg">
+                <img src="themes/site_theme/images/new-signsny.jpg">
             </div>
         </div>
     </div>
@@ -152,6 +155,12 @@ $this->title = 'Jujubee Media';
                     </div>
                     <div class="col-md-4">
                         <img src="themes/site_theme/images/3i_sap.png"class="img-client">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="themes/site_theme/images/signs-ny-logo.png"class="img-client">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="themes/site_theme/images/ojobs-logo.jpg"class="img-client">
                     </div>
                 </div>
             </div>
@@ -209,7 +218,7 @@ $this->title = 'Jujubee Media';
 
 <section class="section-contact">
     <div class="container">
-        <h3 class="txt-contact">Any Queries? Don’t Hesitate? Feel Free to Make a Call</h3>
+        <h3 class="txt-contact">Get in touch today to experience best-in-class services!</h3>
         <div class="row contact-row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mob-display">
                 <span><img src="themes/site_theme/images/contact-message.png" ></span><span class="contact-details">Support@domain.com</span>

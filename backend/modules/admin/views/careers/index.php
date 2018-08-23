@@ -1,6 +1,6 @@
 <?php
 
-use common\models\ContactusSearch;
+use common\models\CareerFormSearch;
 use yii\data\ActiveDataProvider;
 use yii\grid\GridView;
 use yii\helpers\Html;
@@ -8,33 +8,29 @@ use yii\helpers\Url;
 use yii\web\View;
 
 /* @var $this View */
-/* @var $searchModel ContactusSearch */
+/* @var $searchModel CareerFormSearch */
 /* @var $dataProvider ActiveDataProvider */
 
-$this->title = 'Contact Us';
+$this->title = 'Career Forms';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="contactus-index">
+<div class="career-form-index">
 
-    
-   <p class="pull-right">
-        <?php // Html::a('Create Contact us', ['create'], ['class' => 'btn btn-success']) ?>
+
+    <p class="pull-right">
+        <?php // Html::a('Create Career Form', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?= GridView::widget([
+    <?=
+    GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            //'contactus_id',
+                ['class' => 'yii\grid\SerialColumn'],
+            //'careerform_id',
             'name:ntext',
             'phone:ntext',
-            'email:email',
-            'message:ntext',
-            //'created_at',
-            //'updated_at',
-
+            'email:ntext',
             ['class' => 'yii\grid\ActionColumn',
                 'template' => '{view}{delete}',
                 'buttons' => [
@@ -44,7 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ]);
                     },
                     'delete' => function ($url, $model) {
-                        $url = Url::to(['careers/delete', 'id' => $model->contactus_id]);
+                        $url = Url::to(['careers/delete', 'id' => $model->careerform_id]);
                         return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
                             'title'        => 'delete',
                             'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
@@ -54,5 +50,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
             ],
         ],
-    ]); ?>
+    ]);
+    ?>
 </div>

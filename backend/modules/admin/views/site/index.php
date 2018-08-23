@@ -109,9 +109,37 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
             <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
           </div>
         </div>
-        <!-- ./col -->
+         <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+                <h3><?= $works = common\models\Contactus::find()->count();?></h3>
+
+              <p>Contact Us</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-contact"></i>
+            </div>
+               <?php echo Html::a($view, ['/admin/contactus/index'], ["class" => 'small-box-footer']); ?>
+            <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
+          </div>
+        </div>
+         <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+                <h3><?= $works = common\models\CareerForm::find()->count();?></h3>
+
+              <p>Careers</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-albums"></i>
+            </div>
+               <?php echo Html::a($view, ['/admin/careers/index'], ["class" => 'small-box-footer']); ?>
+            <!--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
+          </div>
+        </div>
        
-        <!-- ./col -->
       </div>
       <div class="row">
       

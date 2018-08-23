@@ -17,6 +17,7 @@ use common\models\Page;
 use common\models\Work;
 use common\models\Contactus;
 use common\models\CareerForm;
+use yii\web\UploadedFile;
 
 /**
  * Site controller
@@ -256,7 +257,7 @@ class SiteController extends Controller {
 
                 $emailSend1 = Yii::$app->mailer->compose()
                         ->setFrom(['sumanasdev@gmail.com'])
-                        ->setTo('banushree@arkinfotec.com')
+                        ->setTo('hr@arkinfotec.com')
                         ->setSubject($mail_sub1)
                         ->setHtmlBody($mail_body1)
                         ->send();
@@ -283,79 +284,80 @@ class SiteController extends Controller {
         ]);
     }
 
-    
     public function actionCareer() {
-       
-         $model = new CareerForm();
+
+        $model = new CareerForm();
 
         if (Yii::$app->request->isAjax) {
             $data = Yii::$app->request->post();
-
-            $model->resume = UploadedFile::getInstance($model, 'resume');
-            if ($model->resume) {
-                $file_name = str_replace(' ', '-', $model->resume->baseName);
-                $randno = rand(11111, 99999);
-                $folder = Yii::$app->basePath . '/web/uploads/';
-                $model->resume->saveAs($folder . '/' . $randno . $model->resume->baseName . '.' . $model->resume->extension);
-                $model->resume = $randno . $model->resume->baseName . '.' . $model->resume->extension;
-                //$path = Yii::getAlias('@frontend') . '/web/uploads/';
-                //$model->resume->saveAs($path . $model->resume);
-            }
-            
-            $model->name = $data['na1'];
-            $model->email = $data['em1'];
-            $model->phone = $data['ph1'];
-            $model->message = $data['mes1'];
-            $model->know_by = $data['kn1'];
-            $hidden = $data['hid1'];
-            
-            $model->save();
-            
-             if ($data['form'] == 'career') {
-                $mail_sub1 = 'Enquire A Profile';
-                $mail_body1 = "<p>Hi Admin,</p>";
-                $mail_body1 .= "You have a new job profile. <br><br>";
-                $mail_body1 .= "<table cellpadding='10' border='1' >";
-                $mail_body1 .= "<tr><th>Name: </th><td>" . $model->name . "</td></tr>";
-                $mail_body1 .= "<tr><th>Email:</th><td>" . $model->email . "</td></tr>";
-                $mail_body1 .= "<tr><th>Phone: </th><td>" . $model->phone . "</td></tr>";
-                $mail_body1 .= "<tr><th>Message: </th><td>" . $model->message . "</td></tr>";
-                $mail_body1 .= "<tr><th>Refered By: </th><td>" . $model->know_by . "</td></tr>";
-                $mail_body1 .= "<tr><th>Designation: </th><td>" . $hidden . "</td></tr>";
-                $mail_body1 .= "</table><br><br>";
-                // $mail_body1 .= "Name: " . $na1 . "<br>Email: " . $em1 . " <br> Phone: " . $ph1 . "<br>Message: " . $mes1 . "<br><br>";
-                $mail_body1 .= "<strong>Regards, </strong><br>";
-                $mail_body1 .= "<strong>Jujubee Media </strong><br><br>";
-
-                $mail_sub2 = 'Enquire A Profile';
-                $mail_body2 = "<p>Hi " . $model->name . ",</p>";
-                $mail_body2 .= "Thank you for contacting us!<br>We will get back to you at the earliest.<br><br>";
-                $mail_body2 .= "<strong>Regards, </strong><br>";
-                $mail_body2 .= "<strong>Jujubee Media </strong><br><br>";
-
-                $emailSend1 = Yii::$app->mailer->compose()
-                        ->setFrom(['sumanasdev@gmail.com'])
-                        ->setTo('banushree@arkinfotec.com')
-                        ->setSubject($mail_sub1)
-                        ->setHtmlBody($mail_body1)
-                        ->send();
-                $emailSend2 = Yii::$app->mailer->compose()
-                        ->setFrom(['sumanasdev@gmail.com'])
-                        ->setTo($model->email)
-                        ->setSubject($mail_sub2)
-                        ->setHtmlBody($mail_body2)
-                        ->send();
-
-                if ($emailSend1 && $emailSend2) {
-                    echo "success";
-                    exit;
-                } else {
-                    echo "error";
-                    exit;
+            $model->name = $data['name'];
+            $model->email = $data['email'];
+            $model->phone = $data['phone'];
+            $model->message = $data['message'];
+            $model->know_by = $data['know'];
+            // $model->load(Yii::$app->request->post());
+            //print_r($model->attributes);exit;
+            if (isset($_FILES['resume'])) {
+                $uploadPath = Yii::getAlias('@frontend') . '/web/uploads/resumes';
+                $file = UploadedFile::getInstanceByName('resume');
+                $original_name = $file->baseName;
+                $newFileName = \Yii::$app->security->generateRandomString() . '.' . $file->extension;
+                // you can write save code here before uploading.
+                if ($file->saveAs($uploadPath . '/' . $data['name']. $newFileName)) {
+                    $model->resume = $data['name'].$newFileName;
                 }
             }
+
+            $model->save();
+
+            // if ($data['form'] == 'career') {
+            $mail_sub1 = 'Enquire A Profile';
+            $mail_body1 = "<p>Hi Admin,</p>";
+            $mail_body1 .= "You have a new job profile. <br><br>";
+            $mail_body1 .= "<table cellpadding='10' border='1' >";
+            $mail_body1 .= "<tr><th>Name: </th><td>" . $model->name . "</td></tr>";
+            $mail_body1 .= "<tr><th>Email:</th><td>" . $model->email . "</td></tr>";
+            $mail_body1 .= "<tr><th>Phone: </th><td>" . $model->phone . "</td></tr>";
+            $mail_body1 .= "<tr><th>Message: </th><td>" . $model->message . "</td></tr>";
+            $mail_body1 .= "<tr><th>Refered By: </th><td>" . $model->know_by . "</td></tr>";
+            $mail_body1 .= "<tr><th>Designation: </th><td>" . $data['designation'] . "</td></tr>";
+            $mail_body1 .= "</table><br><br>";
+            // $mail_body1 .= "Name: " . $na1 . "<br>Email: " . $em1 . " <br> Phone: " . $ph1 . "<br>Message: " . $mes1 . "<br><br>";
+            $mail_body1 .= "<strong>Regards, </strong><br>";
+            $mail_body1 .= "<strong>Jujubee Media </strong><br><br>";
+
+            $mail_sub2 = 'Enquire A Profile';
+            $mail_body2 = "<p>Hi " . $model->name . ",</p>";
+            $mail_body2 .= "Thank you for contacting us!<br>We will get back to you at the earliest.<br><br>";
+            $mail_body2 .= "<strong>Regards, </strong><br>";
+            $mail_body2 .= "<strong>Jujubee Media </strong><br><br>";
+
+            $emailSend1 = Yii::$app->mailer->compose()
+                    ->setFrom(['sumanasdev@gmail.com'])
+                    ->setTo('hr@arkinfotec.com')
+                    ->setSubject($mail_sub1)
+                    ->setHtmlBody($mail_body1)
+                    ->send();
+            $emailSend2 = Yii::$app->mailer->compose()
+                    ->setFrom(['sumanasdev@gmail.com'])
+                    ->setTo($model->email)
+                    ->setSubject($mail_sub2)
+                    ->setHtmlBody($mail_body2)
+                    ->send();
+
+            if ($emailSend1 && $emailSend2) {
+                echo "success";
+                exit;
+            } else {
+                echo "error";
+                exit;
+            }
+            //}
+        } else {
+            return $this->render('/pages/careers', [
+                        'model' => $model,
+            ]);
         }
-        
-        
     }
+
 }

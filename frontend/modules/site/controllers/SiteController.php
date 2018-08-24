@@ -75,16 +75,20 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionPages($slug) {
-        if ($pagez = Page::findOne(['slug' => $slug])) { //for services page title,desc,keywrd presents so it can be automatically called by main.php
+        if ($pagez = Page::findOne(['slug' => $slug])) {
             $formatted_content = Yii::$app->shortcodes->parse($pagez->content);
             return $this->render('/pages/common_page', ['pagez' => $pagez, 'formatted_content' => $formatted_content]);
+        } else if ($slug == 'work') {
+            $works = Work::find()->all();
+            $categories = \yii\helpers\ArrayHelper::map($works, 'category', 'category');
+            return $this->render('/pages/work', ['works' => $works, 'categories' => $categories]);
         } else {
-            if ($slug == 'work') { // for work page seo pages are called
-                $works = Work::find()->all();
-                $categories = \yii\helpers\ArrayHelper::map($works, 'category', 'category');
-                return $this->render('/pages/work', ['works' => $works, 'categories' => $categories]);
-            }
-            return $this->render('/pages/' . $slug);
+                try {
+                    $view = "/pages/{$slug}";
+                    return $this->render($view);
+                } catch (\yii\base\ViewNotFoundException $e) {
+                    throw new \yii\web\NotFoundHttpException('404! Page not found.');
+                }
         }
     }
 
@@ -303,8 +307,8 @@ class SiteController extends Controller {
                 $original_name = $file->baseName;
                 $newFileName = \Yii::$app->security->generateRandomString() . '.' . $file->extension;
                 // you can write save code here before uploading.
-                if ($file->saveAs($uploadPath . '/' . $data['name']. $newFileName)) {
-                    $model->resume = $data['name'].$newFileName;
+                if ($file->saveAs($uploadPath . '/' . $newFileName)) {
+                    $model->resume = $newFileName;
                 }
             }
 
@@ -359,5 +363,13 @@ class SiteController extends Controller {
             ]);
         }
     }
+
+//    public function actionError() {
+//        $error = Yii::app()->errorHandler->error;
+//        if ($error)
+//            $this->render('error', array('error' => $error));
+//        else
+//            throw new CHttpException(404, 'Page not found.');
+//    }
 
 }

@@ -57,7 +57,7 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'site/site/error',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

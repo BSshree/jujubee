@@ -142,7 +142,7 @@ class WorksController extends Controller {
                 }
             } else {
                 $model->project_image = $old_pro_image;
-                //$model->save();
+                $model->save();
             }
             return $this->redirect(['index']);
         }

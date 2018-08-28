@@ -73,10 +73,10 @@
       $('#Testimonial').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    nav:false,
     autoplay:false,
-    dots:false,
-    navText: ["<i class='icon ion-ios-arrow-round-back'></i>", "<i class='icon ion-ios-arrow-round-forward'></i>"],
+    dots:true,
+    // navText: ["<i class='icon ion-ios-arrow-round-back'></i>", "<i class='icon ion-ios-arrow-round-forward'></i>"],
     responsive:{
         0:{
             items:1

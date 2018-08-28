@@ -106,7 +106,7 @@ $this->title = 'Jujubee Media';
                 <h2 class="project-head2">A sneak-peek into our fabulous portfolio!</h2>
             </div>
             <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <button type="button" class="btn btn-warning btn-projects"><a href="/work" style="color: black">SEE ALL PROJECTS</a></button>
+                <button type="button" class="btn btn-warning btn-projects"><a href="/work" style="color: white">SEE ALL PROJECTS</a></button>
             </div>
         </div>
     </div>
@@ -215,6 +215,46 @@ $this->title = 'Jujubee Media';
         </div>
       </div>
     </section>-->
+
+<section class="Technologies">
+    <div class="container">
+      <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+           <!--  <p class="about-us-head">TECHNOLOGIES</p> -->
+            <h2 class="about-head2 mt-4">Technologies</h2>
+            <div id="Testimonial" class="owl-carousel owl-theme slider-project-tech">
+            <div class="item " >
+              <h3 class="">Web Developement CMS</h3>
+              <img src="themes/site_theme/images/wordpress.jpg" >
+              <img src="themes/site_theme/images/jomola.jpg" >
+              <img src="themes/site_theme/images/magento.jpg" >
+              <img src="themes/site_theme/images/opencart.jpg" >
+              <img src="themes/site_theme/images/shopify.jpg" >
+              <img src="themes/site_theme/images/duropal.jpg" >
+
+                
+            </div>
+            <div class="item ">
+               <h3 class="">Web Developement Custom</h3>
+              <img src="themes/site_theme/images/laravel.jpg" >
+              <img src="themes/site_theme/images/cake.jpg" >
+              <img src="themes/site_theme/images/code.jpg" >
+              <img src="themes/site_theme/images/yii.jpg" >
+            </div>
+            <div class="item">
+              <h3 class="">Digital Marketing</h3>
+              <img src="themes/site_theme/images/google.jpg" >
+              <img src="themes/site_theme/images/ad.jpg" >
+              <img src="themes/site_theme/images/ad-word.jpg" >
+              <img src="themes/site_theme/images/seo.jpg" >
+              <img src="themes/site_theme/images/social.jpg" >
+              <img src="themes/site_theme/images/e-commerce.jpg" >
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+ </section>
 
 <section class="section-contact">
     <div class="container">

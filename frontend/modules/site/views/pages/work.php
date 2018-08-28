@@ -22,14 +22,15 @@
             </div>
             <?php foreach ($works as $work) { ?>
 
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter <?php echo strtolower($work->category); ?>" >
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe<?php echo strtolower($work->category); ?>" >
                     <a href="#" data-toggle="modal" data-target="#workModal" data-category="<?php echo strtolower($work->category); ?>" data-projectdate="<?php echo strtolower($work->project_date); ?>"  data-projecttype="<?php echo strtolower($work->project_type); ?>" data-projecttitle="<?php echo strtolower($work->title); ?>" data-projectlink="<?php echo ($work->link); ?>" data-projectimage="<?php echo ($work->project_image); ?>">
-                        <figure class="effect-oscar"> <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
-                            <figcaption>
-                                <p class="work-text-center" style="line-height: 1.2em;"> <?php echo strtoupper($work->title); ?><br/>
-                                    <!--<span class="btn motivate-link" ><?php //echo strtoupper($work->title);   ?>  </span></p>-->
-                            </figcaption>
-                        </figure>
+                        <!--<figure class="effect-oscar">--> 
+                            <img src="backend/web/uploads/<?php echo $work->thumbnail; ?>" alt=""/>
+<!--                            <figcaption>
+                                <p class="work-text-center" style="line-height: 1.2em;"> <?php // echo strtoupper($work->title); ?><br/>
+                                    <span class="btn motivate-link" ><?php //echo strtoupper($work->title);   ?>  </span></p>
+                            </figcaption>-->
+                        <!--</figure>-->
                     </a>
                 </div>
 
@@ -39,7 +40,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog " role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title workcategory"></h5>
@@ -50,15 +51,16 @@
                     <div class="modal-body modal-work">
                         <h4 class="worktitle" style="text-transform: uppercase"></h4>
                         <div class="project-details">
-                            <!--                            <div class="project-date">
+<!--                                                        <div class="project-date">
                                                             <p>Project Date:<span class="workprojectdate"></span></p>
                                                         </div>-->
-                            <p>Technology: <span class="workprojecttype"  style="text-transform: capitalize"> </span></p>
-                            <p>Website Link: <a class="worklink" href="" target="2"></a></p>
+                            <h5 style="text-transform: capitalize">Technology: <span class="workprojecttype"  style="text-transform: capitalize"> </span></h5>
+                            <h5 style="text-transform: capitalize">Website Link: <a class="worklink" href="" target="2"> </a></h5>
                         </div> 
-                        <div class="item">
+                       
                             <div id="Projects" class="owl-carousel owl-theme slider-project workprojectimage">
-                                <img src="<?php //echo $work->project_image;  ?>" class="workprojectimage" alt=""/>
+                                 <div class="item">
+                                <img src="<?php //echo $work->project_image;  ?>" width="100%" class="workprojectimage" alt=""/>
                             </div>
                         </div>
                     </div>

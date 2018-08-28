@@ -350,15 +350,32 @@ button.btn.btn-warning.btn-explore.wow.zoomIn.animated:hover {
 /*---------------*/
 
 figure.effect-oscar {
-	background:#fcd159;
+	background:#f7be41;
 	border-left: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 }
+.work figure.effect-oscar {
+	background:#fff;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.filter.hdpe img{
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    border: 1px solid #ccc;
+}
 figure.effect-oscar img {
 	opacity: 0.9;
+	border: 1px solid #ccc;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
+	
 }
+.filter.hdpe img:hover{
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+figure.effect-oscar img
 figure.effect-oscar figcaption {
 	padding: 1.5em;/*
   background-color: rgba(0,0,0,0.5);
@@ -443,7 +460,9 @@ a.btn.motivate-link {
 	color: #000000;
 }
 .section-about {
-	margin-top: 10%;
+	margin-top: 7%;
+	width: 100%;
+        float: left;
 }
 .about-bg {
 	width: 50%;
@@ -478,6 +497,7 @@ a.btn.motivate-link {
 	padding-left: 100px;
 	position: relative;
 	margin-top: 6%;
+	line-height: 30px;
 }
 .img-about {
 	position: absolute;
@@ -491,13 +511,13 @@ a.btn.motivate-link {
 	width: 35%;
 }
 .img-bee {
-	margin-top: 5%;
-	width: 20%;
+	margin-top: 1%;
+	width: 15%;
 }
 .Section-recent-work {
 	background: url(../images/bg-image-hex-right.png) no-repeat;
 	background-size: 100%;
-	margin-top: 5%;
+	margin-top: 1%;
 	width: 100%;
 	float: left;
 }
@@ -625,18 +645,22 @@ section.section-contact {
 	/*background: url(../images/footer-bg.png) no-repeat;
     background-size: 25%;
     background-position: right bottom;*/
-    padding-top: 7%;
+    /*padding-top: 5%;*/
 	color: #fff;
 	font-size: 16px;
-	font-weight: 100;
+	font-weight: 400;
 	width: 100%;
 	float: left;
 	background-color: #444;
 }
-.footer-padding {
+.container.footer-padding {
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+/*.footer-padding {
 	padding-left: 60px;
 	padding-right: 30px;
-}
+}*/
 .footer-submenu {
 	width: 100%;
 	float:left;
@@ -662,7 +686,7 @@ section.section-contact {
 }
 .footer-para-hed {
 	font-size:18px;
-	padding-top:10%;
+	padding-top:5%;
 	padding-bottom:8px;
 }
 .img-footer-logo {
@@ -676,7 +700,7 @@ section.section-contact {
 	margin-top: 5%;
 	float: left;
 	font-size: 16px;
-	line-height: 50px;
+	line-height: 40px;
 }
 .footer-blog {
 	line-height: 20px;
@@ -1327,6 +1351,9 @@ section.business-services {
 	text-align: right;
 	padding-right: 5%;
 }
+.callus h2{
+	font-size: 30px;
+}
 .callus .call-us-email {
 	padding-left: 5%;
 }
@@ -1624,7 +1651,10 @@ animation-name: none;
 
 .project-details p{
 	font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .project-details  span{
 	font-weight: 400;
@@ -1883,4 +1913,84 @@ textarea.form-control {
     border-color: #f7c644 !important;
     color: #ffffff;
     cursor: pointer;
+}
+.Address-info form{
+    margin-top: 5%;
+}
+.Address-info .form-control {
+    height: 40px;
+}
+textarea.form-control {
+    height: auto !important;
+}
+
+.Address-info .input-box {
+    border-bottom: 0px !important;
+    padding-left: 20px;
+    background: transparent !important;
+    border-color: #444444 !important;
+    padding: 3% 5% !important;
+   	color: #fff;
+    border-bottom: 1px solid #fff !important;
+    margin-bottom: 0.5rem !important;
+}
+.Address-info .input-box :before {
+  background: none;
+  border: 4px solid #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+.Address-info ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.Address-info .btn-submit {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2% 10%;
+}
+
+.Technologies{
+	width: 100%;
+	float: left;
+	padding: 2rem 0px;
+	margin-top: 2rem;
+	/*background-color: #f5f5f5;*/
+	text-align: center;
+}
+.Technologies h2{
+	font-size: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 5% 0px;
+}
+
+.slider-project-tech h3{
+	font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.slider-project-tech img{
+	margin: 10px 7px;
+}
+.project-details h5{
+	    letter-spacing: normal;
+     color: #000; 
+     text-transform: lowercase; 
+     font-size: 18px;
+    font-weight: 600;
 }

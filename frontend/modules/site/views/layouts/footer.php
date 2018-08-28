@@ -9,7 +9,7 @@ use yii\web\View;
 use yii\widgets\ActiveForm;
 ?>
 <footer class="section-footer">
-    <div class="container-fluid footer-padding">
+    <div class="container footer-padding">
         <div class="row">
             <?php echo \Yii::$app->shortcodes->parse('[blockcode title="Footer Brand Info"]'); ?>
             <!--          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mob-footer">
@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
                       </div>
             
                       </div>-->
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
                 <h4 class="mob-hed-center font-pop">Digital</h4>
                 <ul>
                     <li><a href="/about">About Jujubee</a></li>
@@ -49,26 +49,53 @@ use yii\widgets\ActiveForm;
                     <li><a href="/mobile#android" data-href="#android" class="footermobile">App Marketing</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mob-none">
-                <h4 class="mob-hed-center font-pop">Thinking Blogs</h4>
-                <ul>
-                    <li class="footer-blog">
-                        <span class="blog-date">26-June-2018</span><br/>
-                        <a href="">How to Create a Strong Video Marketing Strategy in three Steps</a></li>
-                    <li class="footer-blog">
-                        <span class="blog-date">27-June-2018</span><br/>
-                        <a href="">Tips and Tricks for a Successful Online Reputation Management</a></li>
-                    <li class="footer-blog">
-                        <span class="blog-date">28-June-2018</span><br/>
-                        <a href="">How to Boost your E-commerce Sales in 4 Easy Steps</a></li>
-                    <li class="footer-blog">
-                        <span class="blog-date">29-June-2018</span><br/>
-                        <a href="">5 Misleading facts about Digital Marketing</a></li>
-                    <li class="footer-blog">
-                        <span class="blog-date">30-June-2018</span><br/>
-                        <a href="#">Digital Marketing Strategy Essentials For Your Business growth</a></li>
-                </ul>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3  Address-info">
+                <h4 class="mob-hed-center font-pop">Quick Contact</h4>
+                 <form id="contactusform"  name="contactusform" class="formValidate" method="post" action="">
+                    <div class="form-group">
+                         <input type="text" id="con-name" name="name" class="form-control input-box" placeholder="Name*">
+                    </div>
+                    <div class="form-group">
+                         <input type="number" id="con-phone" name="phone" class="form-control input-box"  placeholder="Phone*">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="con-email" name="email" class="form-control input-box"  placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control input-box" id="con-mess" name="mess" placeholder="Message" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" id="request-submit" name="submit" class="btn btn-warning btn-submit" value="SUBMIT" >
+                    </div>
+                     <div class="form-group request-show" style="display:none">
+                             <div class="form-group " >
+                                 <br><p id="successrequest"> </p>  
+                             </div>
+                             <div class="loading-image"><img src="themes/site_theme/images/re.gif" width="8%" height="8%" alt=""> </div>
+                        </div>
+                </form>
             </div>
+
+            <!--            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mob-none">
+                            <h4 class="mob-hed-center font-pop">Thinking Blogs</h4>
+                            <ul>
+                                <li class="footer-blog">
+                                    <span class="blog-date">26-June-2018</span><br/>
+                                    <a href="">How to Create a Strong Video Marketing Strategy in three Steps</a></li>
+                                <li class="footer-blog">
+                                    <span class="blog-date">27-June-2018</span><br/>
+                                    <a href="">Tips and Tricks for a Successful Online Reputation Management</a></li>
+                                <li class="footer-blog">
+                                    <span class="blog-date">28-June-2018</span><br/>
+                                    <a href="">How to Boost your E-commerce Sales in 4 Easy Steps</a></li>
+                                <li class="footer-blog">
+                                    <span class="blog-date">29-June-2018</span><br/>
+                                    <a href="">5 Misleading facts about Digital Marketing</a></li>
+                                <li class="footer-blog">
+                                    <span class="blog-date">30-June-2018</span><br/>
+                                    <a href="#">Digital Marketing Strategy Essentials For Your Business growth</a></li>
+                            </ul>
+                        </div>-->
         </div>
     </div>
     <div class="footer-submenu mob-none">
@@ -78,10 +105,10 @@ use yii\widgets\ActiveForm;
                     <h2>Madurai, India</h2>
                     <p>+91 99528 70443  </p>
                 </div>
-                          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <h2>Bangalore, India  </h2>
-                            <p> +91 9952870443 </p>
-                          </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h2>Bangalore, India  </h2>
+                    <p> +91 9952870443 </p>
+                </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h2>Selangor,Malaysia</h2>
                     <p>+60109101103 </p>

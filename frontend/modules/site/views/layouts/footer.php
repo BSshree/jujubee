@@ -34,6 +34,7 @@ use yii\widgets\ActiveForm;
                     <li><a href="/about">About Jujubee</a></li>
                     <li><a href="/careers">Careers</a></li>
                     <li><a href="/work">Portfolio</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="/contactus">Get In Touch</a></li>
                 </ul>
             </div>

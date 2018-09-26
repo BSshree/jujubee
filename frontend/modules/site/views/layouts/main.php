@@ -39,6 +39,150 @@ $this->title = $seo->meta_title ?: $this->title;
                         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
                 f.parentNode.insertBefore(j, f);
             })(window, document, 'script', 'dataLayer', 'GTM-PF8V7PV');</script>
+       
+       
+        
+        <script type="application/ld+json">
+                {
+                  "@context" : "http://schema.org",
+                  "@type" : "Organization",
+                  "name" : "Jujubee Media - Digital Marketing Company",
+                  "url" : "http://jujubeemedia.com/",
+                  "logo": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+                  "sameAs" : [
+                    "https://www.facebook.com/jujubeemedia",
+                    "https://twitter.com/jujubeemedia",
+                    "https://www.linkedin.com/company/14402872/",
+                    "https://plus.google.com/u/0/b/106177774632969723573/"
+                  ],
+                  "contactPoint" : [{
+                    "@type" : "ContactPoint",
+                    "telephone" : "+9199528 70443",
+                    "contactType" : "customer service"
+                  }]
+                }
+            </script>
+         <script type="application/ld+json">
+            {
+          "@context" : "http://schema.org",
+          "@type" : "WebSite",
+          "name" : "Jujubee Media - Digital Marketing Company",
+          "alternateName" : "Jujubee Media",
+          "url" : "http://jujubeemedia.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "http://jujubeemedia.com?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+    
+     <script type="application/ld+json">
+            {
+          "@context": "http://schema.org/",
+          "@type": "Product",
+          "image": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+          "name": "Digital Marketing Company",
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "name": "Great company to work with! Great communication and responsiveness, and great quality of work.",
+            "author": {
+              "@type": "Person",
+              "name": "CJ Lewis"
+            },
+            "datePublished": "2018-01-15",
+            "reviewBody": "Very good work. Great project management. I really enjoy working with them from Canada. Thanks to all the team.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "jujubeemedia.com"
+            }
+          }
+        }
+        </script>
+        
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+         "@type": "LocalBusiness",     
+         "image": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+         "url": "http://jujubeemedia.com",
+         "logo": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+         "hasMap": "https://bit.ly/2PyrifK",
+         "priceRange": "$$",
+
+         "email": "mailto:info@sumanastech.com",   
+         "address": {
+         "@type": "PostalAddress",
+         "addressLocality": "Madurai",
+         "addressRegion": "India",
+         "postalCode":"625016",
+          "streetAddress": "244/3, Vivek Street, 
+        Duraisamy Nagar, Near Corporation Park,
+        Bye-Pass Road"
+          },
+           "description": "Jujubee Media is a subsidary of Sumanas Technologies Pvt Ltd, Considered the Best Website Design Services & Internet Marketing Agency in Madurai, Tamil Nadu.",
+           "name": "Jujubee Media",
+         "telephone": "+9199528 70443",
+          "openingHours": "Mo 10:00-19:00,Tu 10:00-19:00,We 10:00-19:00,Th 10:00-19:00,Fr 10:00-19:00,Sa 10:00-19:00",
+        "geo": {
+          "@type": "GeoCoordinates",
+         "latitude": "78.0876304",
+         "longitude": "9.9150549"
+             },         
+          "aggregateRating": {
+            "@type": "AggregateRating",
+        "ratingValue": "4.9",
+         "reviewCount": "10"
+          },
+          "sameAs" : ["https://www.facebook.com/jujubeemedia",
+         "https://www.linkedin.com/company/14402872/",
+         "https://twitter.com/jujubeemedia",                            
+         "https://plus.google.com/u/0/b/106177774632969723573/"]
+           }
+        </script>
+
+
+    <script type="application/ld+json">
+        {
+         "@context": "http://schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement":
+         [
+          {
+           "@type": "ListItem",
+           "position": 1,
+           "item":
+           {
+            "@id": "http://jujubeemedia.com/",
+            "name": "Home"
+            }
+          },
+           {
+           "@type": "ListItem",
+           "position": 2,
+           "item":
+           {
+            "@id": "http://jujubeemedia.com/services/",
+            "name": "Services"
+            }
+          },
+          {
+           "@type": "ListItem",
+          "position": 3,
+          "item":
+           {
+             "@id": "http://jujubeemedia.com/seo",
+             "name": "Search Engine Optimization"
+           }   
+          }
+         ]
+        }
+        </script>
+
         <!-- End Google Tag Manager -->
     </head>
     <body>

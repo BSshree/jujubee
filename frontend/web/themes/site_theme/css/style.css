@@ -3,7 +3,8 @@ body {
 	font-size: 18px;
 	font-family: 'Source Sans Pro', sans-serif !important;
 	color: #222222;
-	font-weight: 300;
+	font-weight: 400;
+	line-height: 30px;
 }
 img {
 	max-width: 100%;
@@ -88,7 +89,7 @@ header.header-cont img {
 	font-size: 34px;
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
-	width: 75%;
+	width: 100%;
 }
 .cd-words-wrapper {
 	display: inline-block;
@@ -270,7 +271,7 @@ button.btn.btn-warning.btn-explore.wow.zoomIn.animated:hover {
 	font-size: 50px;
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
-	margin: 5% 0px;
+	margin: 3% 0px;
 }
 .section-motivate {
 	background: url(../images/bg-image-hex.png) no-repeat;
@@ -460,7 +461,7 @@ a.btn.motivate-link {
 	color: #000000;
 }
 .section-about {
-	margin-top: 7%;
+	margin-top: 5%;
 	width: 100%;
         float: left;
 }
@@ -476,6 +477,7 @@ a.btn.motivate-link {
 	font-size: 12px;
 	color: #a6a6a6;
 	letter-spacing: 2px;
+	margin-bottom: 0px;
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
 }
@@ -513,6 +515,7 @@ a.btn.motivate-link {
 .img-bee {
 	margin-top: 1%;
 	width: 15%;
+	float: left;
 }
 .Section-recent-work {
 	background: url(../images/bg-image-hex-right.png) no-repeat;
@@ -539,7 +542,8 @@ button.btn.btn-warning.btn-projects:hover {
 	margin-top: 5%;
 }
 .client-margin {
-	margin-top:8%;
+	margin-top:4%;
+	text-align:justify;
 	padding-right: 8%;
 	padding-left: 8%;
 }
@@ -620,11 +624,11 @@ i.icon.ion-ios-arrow-round-forward {
 	font-size: 30px;
 }
 section.section-contact {
-	margin-top: 5%;
+	margin-top: 1%;
 	text-align: center;
 	background: url(../images/contact-bee.png) no-repeat;
 	background-size: cover;
-	background-position: right;
+	background-position: bottom right;
 	width: 100%;
 	float: left;
 }
@@ -639,7 +643,7 @@ section.section-contact {
 	margin-left: 5%;
 }
 .contact-row {
-	padding-bottom: 11%;
+	padding-bottom: 5%;
 }
 .section-footer {
 	/*background: url(../images/footer-bg.png) no-repeat;
@@ -669,6 +673,9 @@ section.section-contact {
 	text-align: center;
 	padding: 2%;
 }
+.footer-submenu p{
+	text-align:center !important;
+}
 .footer-submenu1 {
 	text-align: center;
 	width: 100%;
@@ -684,9 +691,12 @@ section.section-contact {
 .mob-none {
 	display: block;
 }
+.mob-none p{
+	text-align: left;
+}
 .footer-para-hed {
 	font-size:18px;
-	padding-top:5%;
+	padding-top:0%;
 	padding-bottom:8px;
 }
 .img-footer-logo {
@@ -778,7 +788,7 @@ ul.quick-links li {
 	width: 50px !important;
 }
 .footer-font {
-	line-height: 15px;
+	line-height: 35px;
 	font-size: 30px;
 	font-weight: 300;
 	font-family: 'Poppins', sans-serif !important;
@@ -1102,6 +1112,9 @@ textarea {
 	float: left;
 	margin-top: 3rem;
 }
+.welcome p {
+    text-align: justify;
+}
 .welcome h5 {
 	letter-spacing: 1px;
 	color: rgba(0,0,0,0.4);
@@ -1294,15 +1307,18 @@ section.business-services {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+.services-detail p{
+	text-align:justify;
+}
 .service-web h2 {
 	font-size: 34px;
 	font-family: 'Poppins', sans-serif;
-	margin: 25px 0 25px 0;
+	margin: 5px 0 25px 0;
 	font-weight: 600;
 }
-.service-web p {
+/*.service-web p {
 	font-size: 16px;
-}
+}*/
 .services-category {
 	margin-top: 5%;
 }
@@ -1338,7 +1354,7 @@ section.business-services {
 .callus {
 	width: 100%;
 	float: left;
-	padding: 50px 0;
+	padding: 30px 0 10px 0px;
 	font-family: 'Poppins', sans-serif;
 	background-image: -webkit-linear-gradient(left, #f6bb40 50%, #f7f7f7 50%);
 	background-image: -moz-linear-gradient(left, #f6bb40 50%, #f7f7f7 50%);
@@ -1352,7 +1368,7 @@ section.business-services {
 	padding-right: 5%;
 }
 .callus h2{
-	font-size: 30px;
+	font-size: 26px;
 }
 .callus .call-us-email {
 	padding-left: 5%;
@@ -1413,7 +1429,10 @@ section.business-services {
 .services-seo {
 	width: 100%;
 	float: left;
-	margin-top: 5%;
+	margin-top: 3%;
+}
+.services-seo p{
+	text-align:justify;
 }
 .services-seo h5 {
 	letter-spacing: 1px;
@@ -1573,7 +1592,7 @@ i.fa.fa-paper-plane {
 
 div#collapseExample{
       position: absolute;
-    right: -190px;
+    right: -250px;
     padding-left: 5px;
     top: 24px;
     border-left: 2px solid #fff;
@@ -1967,7 +1986,6 @@ input[type=number]::-webkit-outer-spin-button {
 	width: 100%;
 	float: left;
 	padding: 2rem 0px;
-	margin-top: 2rem;
 	/*background-color: #f5f5f5;*/
 	text-align: center;
 }
@@ -1993,4 +2011,102 @@ input[type=number]::-webkit-outer-spin-button {
      text-transform: lowercase; 
      font-size: 18px;
     font-weight: 600;
+}
+.branding{
+	width: 100%;
+	float: left;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.branding h5{
+	letter-spacing: 1px;
+    color: rgba(0,0,0,0.4);
+    text-transform: uppercase;
+}
+.branding h2{
+	    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    margin: 25px 0 20px 0;
+    font-weight: 600;
+}
+.branding-strategy h2{
+	line-height: 55px;
+}
+.branding-brand img{
+	float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.branding-features{
+	margin-top: 2rem;
+}
+.branding-features h3{
+	font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    margin: 25px 0 20px 0;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.branding-discover{
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+.branding-discover p{
+	font-weight: 500;
+    color:#444;
+    margin-bottom: 8px;
+    margin-top: 1rem;
+}	
+.branding-discover h6{
+	font-weight: 500;
+    line-height: 30px;
+    color: #090913;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.brandig-agency h6{
+	font-size: 26px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.baranding-contact{
+	text-align: justify;
+}
+.branding-brand{
+	margin-top: 1rem;
+	text-align: justify;
+}
+.mob-footer{
+    line-height: normal;
+}
+.cookies{
+	width: 100%;
+	float: left;
+	padding: 1rem;
+	color: #fff;
+	position: fixed;
+    bottom: 0px;
+    z-index: 99;
+	background: #292929d6;
+}
+.cookies p{
+	float: left;
+    width: 80%;
+    margin-bottom: 0px;
+}
+.btn-agree{
+	font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+    margin-top: 8px;
+    border-radius: 51px;
+    font-family: 'Poppins', sans-serif;
+    /*color: #fff;*/
+    float: right;
+}
+.btn-agree:hover{
+	background-color: #f0a956 !important;
+	color: #fff;
 }

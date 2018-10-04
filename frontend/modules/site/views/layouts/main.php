@@ -44,11 +44,11 @@ $this->title = $seo->meta_title ?: $this->title;
         
         <script type="application/ld+json">
                 {
-                  "@context" : "http://schema.org",
+                  "@context" : "https://schema.org",
                   "@type" : "Organization",
                   "name" : "Jujubee Media - Digital Marketing Company",
-                  "url" : "http://jujubeemedia.com/",
-                  "logo": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+                  "url" : "https://jujubeemedia.com/",
+                  "logo": "https://jujubeemedia.com/themes/site_theme/images/logonew.png",
                   "sameAs" : [
                     "https://www.facebook.com/jujubeemedia",
                     "https://twitter.com/jujubeemedia",
@@ -64,14 +64,14 @@ $this->title = $seo->meta_title ?: $this->title;
             </script>
          <script type="application/ld+json">
             {
-          "@context" : "http://schema.org",
+          "@context" : "https://schema.org",
           "@type" : "WebSite",
           "name" : "Jujubee Media - Digital Marketing Company",
           "alternateName" : "Jujubee Media",
-          "url" : "http://jujubeemedia.com",
+          "url" : "https://jujubeemedia.com",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "http://jujubeemedia.com?s={search_term_string}",
+            "target": "https://jujubeemedia.com?s={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         }
@@ -79,9 +79,9 @@ $this->title = $seo->meta_title ?: $this->title;
     
      <script type="application/ld+json">
             {
-          "@context": "http://schema.org/",
+          "@context": "https://schema.org/",
           "@type": "Product",
-          "image": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+          "image": "https://jujubeemedia.com/themes/site_theme/images/logonew.png",
           "name": "Digital Marketing Company",
           "review": {
             "@type": "Review",
@@ -106,11 +106,11 @@ $this->title = $seo->meta_title ?: $this->title;
         
         <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
+          "@context": "https://schema.org",
          "@type": "LocalBusiness",     
-         "image": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
-         "url": "http://jujubeemedia.com",
-         "logo": "http://jujubeemedia.com/themes/site_theme/images/logonew.png",
+         "image": "https://jujubeemedia.com/themes/site_theme/images/logonew.png",
+         "url": "https://jujubeemedia.com",
+         "logo": "https://jujubeemedia.com/themes/site_theme/images/logonew.png",
          "hasMap": "https://bit.ly/2PyrifK",
          "priceRange": "$$",
 
@@ -148,7 +148,7 @@ $this->title = $seo->meta_title ?: $this->title;
 
     <script type="application/ld+json">
         {
-         "@context": "http://schema.org",
+         "@context": "https://schema.org",
          "@type": "BreadcrumbList",
          "itemListElement":
          [
@@ -157,7 +157,7 @@ $this->title = $seo->meta_title ?: $this->title;
            "position": 1,
            "item":
            {
-            "@id": "http://jujubeemedia.com/",
+            "@id": "https://jujubeemedia.com/",
             "name": "Home"
             }
           },
@@ -166,7 +166,7 @@ $this->title = $seo->meta_title ?: $this->title;
            "position": 2,
            "item":
            {
-            "@id": "http://jujubeemedia.com/services/",
+            "@id": "https://jujubeemedia.com/services/",
             "name": "Services"
             }
           },
@@ -175,7 +175,7 @@ $this->title = $seo->meta_title ?: $this->title;
           "position": 3,
           "item":
            {
-             "@id": "http://jujubeemedia.com/seo",
+             "@id": "https://jujubeemedia.com/seo",
              "name": "Search Engine Optimization"
            }   
           }

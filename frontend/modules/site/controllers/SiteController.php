@@ -78,10 +78,10 @@ class SiteController extends Controller {
         if ($pagez = Page::findOne(['slug' => $slug])) {
             $formatted_content = Yii::$app->shortcodes->parse($pagez->content);
             return $this->render('/pages/common_page', ['pagez' => $pagez, 'formatted_content' => $formatted_content]);
-        } else if ($slug == 'work') {
+        } else if ($slug == 'clients') {
             $works = Work::find()->all();
             $categories = \yii\helpers\ArrayHelper::map($works, 'category', 'category');
-            return $this->render('/pages/work', ['works' => $works, 'categories' => $categories]);
+            return $this->render('/pages/clients', ['works' => $works, 'categories' => $categories]);
         } else {
                 try {
                     $view = "/pages/{$slug}";
@@ -372,4 +372,13 @@ class SiteController extends Controller {
 //            throw new CHttpException(404, 'Page not found.');
 //    }
 
+    public function beforeAction($action)
+    {
+        if (in_array($action->id, ['contacts'])) {
+            Yii::$app->response->redirect(\yii\helpers\Url::to(['/contactus']), 301);
+            Yii::$app->end();
+        }
+        return parent::beforeAction($action);
+    }
+    
 }

@@ -8,7 +8,7 @@ use yii\bootstrap\Modal;
 
 <header class="header header-cont">
        <div class="container"> 
-      <a href="/"><img src="themes/site_theme/images/logonew.png" ></a>
+      <a href="/"><img src="themes/site_theme/images/logo1.png" ></a>
       <div class="burger">
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
@@ -35,14 +35,14 @@ use yii\bootstrap\Modal;
           <li class="menu__item">
             <a href="#" class="menu__link services-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Services</a>
             <div class="collapse" id="collapseExample">
-              <a class="dropdown-item" href="/web-design">Design</a>
-              <a class="dropdown-item" href="/web">Web</a>
-              <a class="dropdown-item" href="/seo">Digital</a>
-              <a class="dropdown-item" href="/mobile">Mobile</a>
-              <!--<a class="dropdown-item" href="/outsource">Out Sourcing</a>-->
+              <a class="dropdown-item" href="/creative-agency">Creative Agency</a>
+              <a class="dropdown-item" href="/web-design">Web Design</a>
+              <a class="dropdown-item" href="/seo">Digital Marketing</a>
+              <a class="dropdown-item" href="/mobile-application">Mobile Application</a>
+              <a class="dropdown-item" href="/design-branding">Design & Branding</a>
             </div>
           </li>
-          <li class="menu__item"><a href="/work" class="menu__link">Portfolio</a></li>
+          <li class="menu__item"><a href="/clients" class="menu__link">Clients</a></li>
           <li class="menu__item"><a href="/blog" class="menu__link">Blog</a></li>
           <li class="menu__item"><a href="/careers" class="menu__link">Careers</a></li>
           <!-- <li class="menu__item"><a href="" class="menu__link">Thinking</a></li> -->

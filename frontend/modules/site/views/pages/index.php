@@ -11,7 +11,7 @@ $this->title = 'Jujubee Media';
 <section class="section-banner">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 slider-text d" >
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 slider-text d" >
               <!--<p class="slider-text-para wow fadeInRight pull-right animate">Leading Full Service</p>-->
                 <h1 class="cd-headline letters type wow fadeInLeft animated" data-wow-delay=".5s">
                      Digital Marketing 2.0
@@ -27,14 +27,15 @@ $this->title = 'Jujubee Media';
 
 <section class="section-motivate">
     <div class="container"> 
-        <h2 class="motive-head">Crafting Phenomenal Digital Experiences!</h2>
+        
         <p class="motive-para">Web Design, Development, Digital Marketing....all this and much much more!</p>
+        <h2 class="motive-head">Crafting Phenomenal Digital Experiences!</h2>
         <div class="row grid no-gutters">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 home-pro-thumb wow zoomIn animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-1.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt"> WEB DESIGN <br/>
-                            <a href="#" class="btn motivate-link">Web design & Development that is <br> fast, crisp and just a delight to look at</a></p>
+                            <a href="/web" class="btn motivate-link">Web design & Development that is <br> fast, crisp and just a delight to look at</a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -42,15 +43,15 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-2.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt"> DIGITAL MARKETING<br/>
-                            <a href="#" class="btn motivate-link">As Google Certified professionals <br> we craft the perfect Ad campaigns <br> helping you leverage the internet </a></p>
+                            <a href="/seo" class="btn motivate-link">As Google Certified professionals <br> we craft the perfect Ad campaigns <br> helping you leverage the internet </a></p>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 home-pro-thumb wow zoomIn animated" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-3.jpg" alt=""/>
+                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-6.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt text-hed-2 pro-hed-text"> DESIGN & BRANDING <br/>
-                            <a href="#" class="btn motivate-link"> Ctrl+F5 your business </a></p>
+                            <a href="/branding" class="btn motivate-link"> Ctrl+F5 your business </a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -58,7 +59,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-4.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt text-hed-2 pro-hed-text"> MOBILE APPLICATION <br/>
-                            <a href="#" class="btn motivate-link"> Android & iOS </a></p>
+                            <a href="/mobile" class="btn motivate-link"> Android & iOS </a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -66,7 +67,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-5.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt text-hed-2 pro-hed-text"> CREATIVE AGENCY <br/>
-                            <a href="#" class="btn motivate-link"> ADs, Animations, Videos,<br> Banners we do it all..! </a></p>
+                            <a href="/web-design" class="btn motivate-link"> ADs, Animations, Videos,<br> Banners we do it all..! </a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -87,7 +88,7 @@ $this->title = 'Jujubee Media';
         <h2 class="about-head2">We’r a dynamic team of talented people with innovative ideas & marketing expertise.</h2>
         <div class="about-head3">
             <img src="themes/site_theme/images/about-icons.png" class="img-about " >
-            <h4>Best Digital Marketing Agency in Madurai</h4>
+            <!--<h4>Best Digital Marketing Agency in Madurai</h4>-->
             <p>With a decade of experience in advanced web development, and a staggering work force of talented Developers, Analysts, Designers & Digital Marketers.
                 We have accomplished more than what we had ventured out for. Our Certified professionals and Dedicated Project Managers make sure to leave no stone unturned to give your websites the speed, style, functionality & reach your business needs.</p>
         </div>
@@ -258,12 +259,12 @@ $this->title = 'Jujubee Media';
 
 <section class="section-contact">
     <div class="container">
-        <h3 class="txt-contact">Get in touch today to experience best-in-class services!</h3>
+        <h3 class="txt-contact">Get in touch today, for a free digital marketing plan!</h3>
         <div class="row contact-row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mob-display">
-                <span><img src="themes/site_theme/images/contact-message.png" ></span><span class="contact-details">Support@domain.com</span>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mob-display">
+                <span><img src="themes/site_theme/images/contact-message.png" ></span><span class="contact-details">info@jujubeemedia.com</span>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mob-display">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mob-display">
                 <span><img src="themes/site_theme/images/contact-call.png" ></span><span class="contact-details">+91 99528 70443 </span>
             </div>
         </div>

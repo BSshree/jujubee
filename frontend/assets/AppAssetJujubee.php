@@ -25,10 +25,11 @@ class AppAssetJujubee extends AssetBundle {
 //        '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css',
 //        '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.csst',
         '//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css',
+        '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css'
     ];
     public $js = [
 //        'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
-        'js/jquery-2.1.1.js',
+//        'js/jquery-2.1.1.js',
         'js/popper.min.js',
         'js/bootstrap.min.js',
         'js/wow.js',
@@ -36,13 +37,14 @@ class AppAssetJujubee extends AssetBundle {
         'js/owl.carousel.min.js',
         'js/custom.js',
         'js/jquery.validate.js',
-        'js/sample.js',
+//        'js/sample.js',
 //        '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js',
         //'//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
         '//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js',
+        '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js'
     ];
     public $depends = [
-        //'yii\web\YiiAsset',
+        'yii\web\YiiAsset',
        // 'frontend\assets\AppAsset',
             // 'yii\bootstrap\BootstrapAsset',
     ];

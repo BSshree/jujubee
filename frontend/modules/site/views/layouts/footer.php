@@ -31,23 +31,22 @@ use yii\widgets\ActiveForm;
             <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
                 <h4 class="mob-hed-center font-pop">Digital</h4>
                 <ul>
-                    <li><a href="/about">About Jujubee</a></li>
+                    <li><a href="/about">About</a></li>
                     <li><a href="/careers">Careers</a></li>
                     <li><a href="/work">Portfolio</a></li>
                     <li><a href="/blog">Blog</a></li>
+                    <li><a href="/careers">Careers</a></li>
                     <li><a href="/contactus">Get In Touch</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                 <h4 class="mob-hed-center font-pop">Web</h4>
                 <ul>
-                    <li><a href="/web#uiux" data-href="#uiux" class="footerweb" >UI/UX</a></li>
-                    <li><a href="/web#ecommerce" data-href="#ecommerce"  class="footerweb">Ecommerce</a></li>
-                    <li><a href="/web#cms" data-href="#cms"  class="footerweb">Content Management System</a></li>
-                    <li><a href="/web#cad" data-href="#cad" class="footerweb">Custom application Development</a></li>
-                    <li><a href="/mobile#android" data-href="#android" class="footermobile">Android</a></li>
-                    <li><a href="/mobile#ios" data-href="#ios" class="footermobile">IOS</a></li>
-                    <li><a href="/mobile#android" data-href="#android" class="footermobile">App Marketing</a></li>
+                    <li><a href="/creative-agency" >Creative Agency</a></li>
+                    <li><a href="/web-design">Web Design</a></li>
+                    <li><a href="/seo" >Digital Marketing</a></li>
+                    <li><a href="/mobile-application" >Mobile Application</a></li>
+                    <li><a href="/design-branding" >Design & Branding</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3  Address-info">
@@ -76,27 +75,6 @@ use yii\widgets\ActiveForm;
                         </div>
                 </form>
             </div>
-
-            <!--            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mob-none">
-                            <h4 class="mob-hed-center font-pop">Thinking Blogs</h4>
-                            <ul>
-                                <li class="footer-blog">
-                                    <span class="blog-date">26-June-2018</span><br/>
-                                    <a href="">How to Create a Strong Video Marketing Strategy in three Steps</a></li>
-                                <li class="footer-blog">
-                                    <span class="blog-date">27-June-2018</span><br/>
-                                    <a href="">Tips and Tricks for a Successful Online Reputation Management</a></li>
-                                <li class="footer-blog">
-                                    <span class="blog-date">28-June-2018</span><br/>
-                                    <a href="">How to Boost your E-commerce Sales in 4 Easy Steps</a></li>
-                                <li class="footer-blog">
-                                    <span class="blog-date">29-June-2018</span><br/>
-                                    <a href="">5 Misleading facts about Digital Marketing</a></li>
-                                <li class="footer-blog">
-                                    <span class="blog-date">30-June-2018</span><br/>
-                                    <a href="#">Digital Marketing Strategy Essentials For Your Business growth</a></li>
-                            </ul>
-                        </div>-->
         </div>
     </div>
     <div class="footer-submenu mob-none">
@@ -119,9 +97,23 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="footer-submenu1">
-        <span>Copyright @ 2018 jujubee media. All rights reserved. | Digital Marketing Agency <a href="/terms">Terms & conditions apply</a></span>
+        <span>Copyright @ 2018 jujubee media. All rights reserved. | Digital Marketing Agency 
+            <!--<a href="/terms">Terms & conditions apply</a>-->
+        </span>
     </div>
 </footer>
+
+<!--<div class="cookies">
+      <div class="container">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <p>This site, like many others, uses small files called cookies to help us customise your experience, please agree to continue to our website.</p>
+          <div class="btn-terms-agree">
+            <button type="button" class="btn btn-warning btn-agree" id="cookie-agreebutton">Agree</button>
+          </div>
+        </div>
+      </div>
+    </div>  -->
+
 <?php
 $contactus = Yii::$app->getUrlManager()->createUrl("site/site/contacts");
 $careers = Yii::$app->getUrlManager()->createUrl("site/site/career");
@@ -129,19 +121,19 @@ $script = <<< JS
         
      $(document).ready(function () {
 
-        $(window).on("load", function () {           
-            var urlHash = window.location.href.split("#")[1];
-                var myarray = ['uiux','ecommerce','cms','cad'];
-                if(jQuery.inArray(urlHash, myarray) !== -1){
-                  $('html,body').animate({
-                      scrollTop: $('#' + urlHash).offset().top + 190
-                  }, 500); 
-                      }else{
-                            $('html,body').animate({
-                              scrollTop: $('#' + urlHash).offset().top - 120
-                          }, 500); 
-                    }
-        });
+//        $(window).on("load", function () {           
+//            var urlHash = window.location.href.split("#")[1];
+//                var myarray = ['uiux','ecommerce','cms','cad'];
+//                if(jQuery.inArray(urlHash, myarray) !== -1){
+//                  $('html,body').animate({
+//                      scrollTop: $('#' + urlHash).offset().top + 190
+//                  }, 500); 
+//                      }else{
+//                            $('html,body').animate({
+//                              scrollTop: $('#' + urlHash).offset().top - 120
+//                          }, 500); 
+//                    }
+//        });
         
         $(document).on('click', '.footerweb', function (event) {
 
@@ -311,10 +303,38 @@ $script = <<< JS
              return false;
            }     
         });
-                
         
+//    window.cookieconsent_options = {
+//    learnMore: 'More info',
+//    message : 'This site, like many others, uses small files called cookies to help us customise your experience, please agree to continue to our website'.
+//    link: 'http://local.jujubeemedia/'
+//    };
+                    
+ 
+
+   window.addEventListener("load", function(){
+   window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#292929d6",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#fdcb43",
+      "text": "#3b3636"
+    }
+  },
+  "showLink": false,
+  "theme": "classic",
+  "content": {
+    "message": "This site, like many others, uses small files called cookies to help us customise your experience, please agree to continue to our website.",
+    "dismiss": "Agree"
+    }
+    })});
+                    
   });
     
+                     
         
 JS;
 $this->registerJs($script, View::POS_END);

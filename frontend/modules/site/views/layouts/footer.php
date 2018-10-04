@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
                 <ul>
                     <li><a href="/about">About</a></li>
                     <li><a href="/careers">Careers</a></li>
-                    <li><a href="/work">Portfolio</a></li>
+                    <li><a href="/clients">Clients</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/careers">Careers</a></li>
                     <li><a href="/contactus">Get In Touch</a></li>
@@ -44,7 +44,7 @@ use yii\widgets\ActiveForm;
                 <ul>
                     <li><a href="/creative-agency" >Creative Agency</a></li>
                     <li><a href="/web-design">Web Design</a></li>
-                    <li><a href="/seo" >Digital Marketing</a></li>
+                    <li><a href="/digital-marketing" >Digital Marketing</a></li>
                     <li><a href="/mobile-application" >Mobile Application</a></li>
                     <li><a href="/design-branding" >Design & Branding</a></li>
                 </ul>

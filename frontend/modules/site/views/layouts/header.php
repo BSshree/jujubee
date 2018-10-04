@@ -37,7 +37,7 @@ use yii\bootstrap\Modal;
             <div class="collapse" id="collapseExample">
               <a class="dropdown-item" href="/creative-agency">Creative Agency</a>
               <a class="dropdown-item" href="/web-design">Web Design</a>
-              <a class="dropdown-item" href="/seo">Digital Marketing</a>
+              <a class="dropdown-item" href="/digital-marketing">Digital Marketing</a>
               <a class="dropdown-item" href="/mobile-application">Mobile Application</a>
               <a class="dropdown-item" href="/design-branding">Design & Branding</a>
             </div>

@@ -28,7 +28,7 @@ IndexIgnore /
 </IfModule>
 
 # Deny accessing below extensions
-<Files ~ "(.json|.lock|.git)">
+<Files ~ "(.json|.lock)">
 Order allow,deny
 Deny from all
 </Files>

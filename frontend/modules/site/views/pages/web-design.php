@@ -10,7 +10,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"><img src="themes/site_theme/images/web-development.jpg" alt="" /></div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 inner-heading inner-heading2">
-                <h2>BEST IN CLASS WEB DESIGN AND DEVELOPMEN</h2>
+                <h2>BEST IN CLASS WEB DESIGN AND DEVELOPMENT</h2>
                 <!-- <img src="./assets/images/about-us.jpg" class="img-about1"> --></div>
             <div id="uiux" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 web-thumb">
                 <p><img src="themes/site_theme/images/ui-ux.png" alt="" /></p>
@@ -18,7 +18,7 @@
                 We believe in offering premium quality UI/UX designing services. Building innovative designs and making them create eternal impressions is what we are passionate about. We just know what it takes to create a winning identity that not only has users coming back onto your website but also gains their trust. From building wireframes to creating that pixel perfect design; we believe in keeping it simple yet elegant at all times. Get to experience the finest of masterpieces build with a futuristic thought process; with Jujubee Media.</div>
             <div id="ecommerce" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 web-thumb">
                 <p><img src="themes/site_theme/images/ecommerce.png" alt="" /></p>
-                <h4>Ecommerce Solution</h4>
+                <h4>Ecommerce Solutions</h4>
                 With almost a decade venture into web development, we adapt to latest technological know-hows to deliver robust websites. Our ecommerce solutions are targeted at giving you the perfect platform which guarantees conversions. Encompassing Ecommerce platforms like Magento, Opencart, Woocommerce, shopify and many more we select the best technology to suit your needs. Creating user friendly experiences is a must when it comes to delivering ecommerce solutions. The ease of navigation and visual appeal is all that makes a big difference in getting higher conversions. We at Jujubee Media give you that cutting edge!</div>
             <div id="cms" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 web-thumb">
                 <p><img src="themes/site_theme/images/cms.png" alt="" /></p>

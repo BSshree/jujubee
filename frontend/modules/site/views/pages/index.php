@@ -35,7 +35,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-1.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt"> WEB DESIGN <br/>
-                            <a href="/web" class="btn motivate-link">Web design & Development that is <br> fast, crisp and just a delight to look at</a></p>
+                            <a href="/web-design" class="btn motivate-link">Web design & Development that is <br> fast, crisp and just a delight to look at</a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -43,7 +43,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-2.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt"> DIGITAL MARKETING<br/>
-                            <a href="/seo" class="btn motivate-link">As Google Certified professionals <br> we craft the perfect Ad campaigns <br> helping you leverage the internet </a></p>
+                            <a href="/digital-marketing" class="btn motivate-link">As Google Certified professionals <br> we craft the perfect Ad campaigns <br> helping you leverage the internet </a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -51,7 +51,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-6.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt text-hed-2 pro-hed-text"> DESIGN & BRANDING <br/>
-                            <a href="/branding" class="btn motivate-link"> Ctrl+F5 your business </a></p>
+                            <a href="/design-branding" class="btn motivate-link"> Ctrl+F5 your business </a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -59,7 +59,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-4.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt text-hed-2 pro-hed-text"> MOBILE APPLICATION <br/>
-                            <a href="/mobile" class="btn motivate-link"> Android & iOS </a></p>
+                            <a href="/mobile-application" class="btn motivate-link"> Android & iOS </a></p>
                     </figcaption>
                 </figure>
             </div>
@@ -67,7 +67,7 @@ $this->title = 'Jujubee Media';
                 <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-5.jpg" alt=""/>
                     <figcaption>
                         <p class="pro-txt text-hed-2 pro-hed-text"> CREATIVE AGENCY <br/>
-                            <a href="/web-design" class="btn motivate-link"> ADs, Animations, Videos,<br> Banners we do it all..! </a></p>
+                            <a href="/creative-agency" class="btn motivate-link"> ADs, Animations, Videos,<br> Banners we do it all..! </a></p>
                     </figcaption>
                 </figure>
             </div>

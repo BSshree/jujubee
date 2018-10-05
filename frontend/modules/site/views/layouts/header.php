@@ -19,7 +19,7 @@ use yii\bootstrap\Modal;
 
       <nav class="menu">
         <div class="menu__brand">
-              <p><img src="themes/site_theme/images/logonew.png" class="img-header"></p>
+              <p><img src="themes/site_theme/images/logo1.png" class="img-header"></p>
               <!--<a href="#" class="header-menu menu-contact">Jujubee@gmail.com</a>-->
               <p class="header-menu menu-contact">+91 99528 70443</p>
               <ul class="list-unstyled list-inline social text-center mob-footer-icons menu-contact">

@@ -32,7 +32,7 @@ use yii\widgets\ActiveForm;
                 <h4 class="mob-hed-center font-pop">Digital</h4>
                 <ul>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/careers">Careers</a></li>
+                    <!--<li><a href="/careers">Careers</a></li>-->
                     <li><a href="/clients">Clients</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/careers">Careers</a></li>

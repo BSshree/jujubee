@@ -50,3 +50,25 @@ font-family:sans-serif;
     color:#68b716;
    font-weight: 600;
 }
+
+.cc-window.cc-banner.cc-type-info.cc-theme-classic.cc-bottom.cc-color-override-335618816 {
+    padding: 1rem 22%;
+}
+
+.cc-compliance a{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+    margin-top: 8px;
+    border-radius: 51px;
+    font-family: 'Poppins', sans-serif;
+    /* color: #fff; */
+    float: right;
+    margin: 0px auto;
+    width: 100%;
+}
+
+
+
+
+

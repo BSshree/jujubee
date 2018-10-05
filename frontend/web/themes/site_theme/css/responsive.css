@@ -533,6 +533,10 @@ section.section-contact{
 .mainpage-subtitle {
     font-size: 20px;
 }
+.cc-window.cc-banner.cc-type-info.cc-theme-classic.cc-bottom.cc-color-override-335618816 {
+    padding: 1rem 10%;
+    font-size: 14px;
+}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -1070,6 +1074,10 @@ section.section-contact{
 }
 .mainpage-subtitle {
     font-size: 24px;
+}
+.cc-window.cc-banner.cc-type-info.cc-theme-classic.cc-bottom.cc-color-override-335618816 {
+    padding: 1rem 7%;
+    font-size: 15px;
 }
 }
 

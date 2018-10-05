@@ -1,4 +1,4 @@
-<section class="banner">
+<section class="banner banner-branding">
          <h2>Branding</h2>
     </section>
 <section class="branding">

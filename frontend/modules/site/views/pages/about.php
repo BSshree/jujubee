@@ -26,9 +26,9 @@
              <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h5>OUR HISTORY</h5>
                 <h3>In IT industry from the last 10 years!</h3>
-                <p>Jujubee Media is a subsidary of Sumanas Technologies Pvt Ltd, that has been in the business of core IT solutions
-                from the past 10 years, With expert knowledge in making websites that drive ROI, we have a vast range of developement
-                experience from a simple Wodpress website to complex API's and SaaS over PHP Frameworks.</p>
+                <p>Jujubee Media is a subsidiary of Sumanas Technologies Pvt Ltd, that has been in the business of core IT solutions
+                from the past 10 years, With expert knowledge in making websites that drive ROI, we have a vast range of development
+                experience from a simple Wordpress website to complex API's and SaaS over PHP Frameworks.</p>
              </div>
           </div>
 

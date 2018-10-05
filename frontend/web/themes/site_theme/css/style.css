@@ -70,6 +70,10 @@ header.header-cont img {
 	background-size: cover;
 	background-position: right;
 }
+.banner-branding{
+        background: url(../images/design-branding.jpg) no-repeat !important; 
+        background-size: cover !important;
+}
 .slider-text {
 	margin-top: 18rem;
 	margin-bottom: 13rem;

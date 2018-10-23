@@ -25,6 +25,12 @@ IndexIgnore /
   RewriteCond %{REQUEST_URI} !^public
   RewriteRule ^webpanel(/.+)?$ backend/web/$1 [L,PT]
   RewriteRule ^(.*)$ frontend/web/$1 [L]
+
+  Redirect 301 /branding /design-branding
+  Redirect 301 /contacts /contactus
+  Redirect 301 /web /web-design
+  Redirect 301 /seo /digital-marketing
+
 </IfModule>
 
 # Deny accessing below extensions

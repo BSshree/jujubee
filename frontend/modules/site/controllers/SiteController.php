@@ -372,13 +372,17 @@ class SiteController extends Controller {
 //            throw new CHttpException(404, 'Page not found.');
 //    }
 
-    public function beforeAction($action)
-    {
-        if (in_array($action->id, ['contacts'])) {
-            Yii::$app->response->redirect(\yii\helpers\Url::to(['/contactus']), 301);
-            Yii::$app->end();
-        }
-        return parent::beforeAction($action);
-    }
+//    public function beforeAction($action)
+//    {
+////        if (in_array($action->id, ['contacts'])) {
+////            Yii::$app->response->redirect(\yii\helpers\Url::to(['/contactus']), 301);
+////            Yii::$app->end();
+////        }
+//         if (in_array($action->id, ['branding'])) {
+//            Yii::$app->response->redirect(\yii\helpers\Url::to(['/design-branding']), 301);
+//            Yii::$app->end();
+//        }
+//        return parent::beforeAction($action);
+//    }
     
 }

@@ -262,7 +262,7 @@ $this->title = 'Jujubee Media';
         <h3 class="txt-contact">Get in touch today, for a free digital marketing plan!</h3>
         <div class="row contact-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mob-display">
-                <span><img src="themes/site_theme/images/contact-message.png" ></span><span class="contact-details">info@jujubeemedia.com</span>
+                <span><img src="themes/site_theme/images/contact-message.png" ></span><span class="contact-details"><a href="mailto:info@jujubeemedia.com" style="color: #222222">info@jujubeemedia.com</a></span>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mob-display">
                 <span><img src="themes/site_theme/images/contact-call.png" ></span><span class="contact-details">+91 99528 70443 </span>

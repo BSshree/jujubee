@@ -69,6 +69,18 @@ font-family:sans-serif;
 }
 
 
+div#linkedIn-root {
+    width: 18%;
+}
+.social-footers {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.fb-footer{
+    position: relative;
+    top: -4px;
+}
 
 
 

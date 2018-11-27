@@ -133,9 +133,9 @@ footer.section-footer h4{
     margin-bottom:2%;
     line-height: normal;
 }
-.mob-none{
+/*.mob-none{
 	display: none !important;
-}
+}*/
 .search-text {
     padding-top: 5%;
 }
@@ -534,8 +534,11 @@ section.section-contact{
     font-size: 20px;
 }
 .cc-window.cc-banner.cc-type-info.cc-theme-classic.cc-bottom.cc-color-override-335618816 {
-    padding: 1rem 10%;
+    padding: 1rem 10% !important;
     font-size: 14px;
+}
+div#linkedIn-root {
+    width: 22% !important;
 }
 }
 
@@ -703,9 +706,9 @@ ul.list-unstyled.list-inline.social.text-center.mob-footer-icons{
     padding-right: 0px;
     font-size: 14px;
 }
-.mob-none{
+/*.mob-none{
 	display: none;
- }
+ }*/
 .footer-padding {
     padding-left:15px !important;
     padding-right: 15px !important;
@@ -1076,8 +1079,11 @@ section.section-contact{
     font-size: 24px;
 }
 .cc-window.cc-banner.cc-type-info.cc-theme-classic.cc-bottom.cc-color-override-335618816 {
-    padding: 1rem 7%;
+    padding: 1rem 7% !important;
     font-size: 15px;
+}
+div#linkedIn-root {
+    width: 13% !important;
 }
 }
 
@@ -1256,9 +1262,9 @@ i.fa.icon-footer-mob {
     background-size: 30% !important;
     background-position: right bottom !important;
 }
-.mob-none{
+/*.mob-none{
 	display: none;
-}
+}*/
 .pl-150 {
      padding-left: 15px; 
 }
@@ -1531,6 +1537,12 @@ section.section-contact{
 }
 .mainpage-subtitle {
     font-size: 24px;
+}
+.cc-window.cc-banner.cc-type-info.cc-theme-classic.cc-bottom.cc-color-override-335618816 {
+    padding: 1rem 5%;
+}
+div#linkedIn-root {
+    width: auto !important;
 }
 }
 

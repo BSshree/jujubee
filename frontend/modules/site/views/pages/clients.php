@@ -1,5 +1,5 @@
 <section class="banner banner-work">
-    <br><h2>Clients</h2>
+    <br><h2>Portfolio</h2>
     <!--<h4><a href="/"> HOME </a> / OUR WORKS</h4>-->
 </section>
 

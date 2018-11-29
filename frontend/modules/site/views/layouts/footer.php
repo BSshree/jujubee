@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
                 <ul>
                     <li><a href="/about">About</a></li>
                     <!--<li><a href="/careers">Careers</a></li>-->
-                    <li><a href="/clients">Clients</a></li>
+                    <li><a href="/clients">Portfolio</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/careers">Careers</a></li>
                     <li><a href="/contactus">Get In Touch</a></li>

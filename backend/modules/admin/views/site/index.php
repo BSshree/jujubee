@@ -100,7 +100,7 @@ $view = "More Info <i class='fa fa-arrow-circle-right'></i>";
             <div class="inner">
                 <h3><?= $works = Work::find()->count();?></h3>
 
-              <p>Clients / Portfolio</p>
+              <p>Portfolio</p>
             </div>
             <div class="icon">
               <i class="ion-ios-briefcase"></i>

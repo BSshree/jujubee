@@ -42,7 +42,7 @@ use yii\bootstrap\Modal;
               <a class="dropdown-item" href="/design-branding">Design & Branding</a>
             </div>
           </li>
-          <li class="menu__item"><a href="/clients" class="menu__link">Clients</a></li>
+          <li class="menu__item"><a href="/clients" class="menu__link">Portfolio</a></li>
           <li class="menu__item"><a href="/blog" class="menu__link">Blog</a></li>
           <li class="menu__item"><a href="/careers" class="menu__link">Careers</a></li>
           <!-- <li class="menu__item"><a href="" class="menu__link">Thinking</a></li> -->

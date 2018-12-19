@@ -147,42 +147,6 @@ $this->title = $seo->meta_title ?: $this->title;
         </script>
 
 
-    <script type="application/ld+json">
-        {
-         "@context": "https://schema.org",
-         "@type": "BreadcrumbList",
-         "itemListElement":
-         [
-          {
-           "@type": "ListItem",
-           "position": 1,
-           "item":
-           {
-            "@id": "https://jujubeemedia.com/",
-            "name": "Home"
-            }
-          },
-           {
-           "@type": "ListItem",
-           "position": 2,
-           "item":
-           {
-            "@id": "https://jujubeemedia.com/services/",
-            "name": "Services"
-            }
-          },
-          {
-           "@type": "ListItem",
-          "position": 3,
-          "item":
-           {
-             "@id": "https://jujubeemedia.com/seo",
-             "name": "Search Engine Optimization"
-           }   
-          }
-         ]
-        }
-        </script>
         
        <div id="fb-root"></div>
     <script>(function(d, s, id) {

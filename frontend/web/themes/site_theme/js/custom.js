@@ -52,8 +52,10 @@
 }());
 
  $('#Clients').owlCarousel({
+    center: true,
     loop:true,
-    margin:10,
+    loop:true,
+    margin:30,
     nav:false,
     autoplay:true,
     dots:false,

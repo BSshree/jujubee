@@ -16,9 +16,18 @@ $this->title = 'Jujubee Media';
                 <h1 class="cd-headline letters type wow fadeInLeft animated" data-wow-delay=".5s">
                      Digital Marketing 2.0
                 </h1>
-                <h3 class="cd-headline letters type wow fadeInLeft animated mainpage-subtitle" data-wow-delay=".8s" style="font-color: white">
+                <section class="cd-intro">
+              <h1 class="cd-headline slide">
+                <span class="cd-words-wrapper">
+                  <b class="is-visible mainpage-subtitle">The New Face of Digital Marketing Driven by Next-Gen Technologies and Advanced Web Development</b>
+                  <b class="mainpage-subtitle">Building brands with the power of unbeatable innovation, dexterity and creativity</b>
+                  <b class="mainpage-subtitle">Transforming most complex of ideas into the simplest of effective business solutions</b>
+                </span>
+              </h1>
+            </section>
+                <!-- <h3 class="cd-headline letters type wow fadeInLeft animated mainpage-subtitle" data-wow-delay=".8s" style="font-color: white">
                      The New Face of Digital Marketing Driven by Next-Gen Technologies and Advanced Web Development
-                </h3>
+                </h3> -->
                 <button type="button" class="btn btn-warning btn-explore wow zoomIn" data-wow-delay=".8s"><a href="/contactus" style="color:black"> Get In Touch<img src="themes/site_theme/images/right-arrow.png" class="img-right-arrow"></a></button>
             </div>
         </div>
@@ -30,48 +39,37 @@ $this->title = 'Jujubee Media';
         
         <p class="motive-para">Web Design, Development, Digital Marketing....all this and much much more!</p>
         <h2 class="motive-head">Crafting Phenomenal Digital Experiences!</h2>
-        <div class="row grid no-gutters">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 home-pro-thumb wow zoomIn animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-1.jpg" alt=""/>
-                    <figcaption>
-                        <p class="pro-txt"> WEB DESIGN <br/>
-                            <a href="/web-design" class="btn motivate-link">Web design & Development that is <br> fast, crisp and just a delight to look at</a></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 home-pro-thumb wow zoomIn animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-2.jpg" alt=""/>
-                    <figcaption>
-                        <p class="pro-txt"> DIGITAL MARKETING<br/>
-                            <a href="/digital-marketing" class="btn motivate-link">As Google Certified professionals <br> we craft the perfect Ad campaigns <br> helping you leverage the internet </a></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 home-pro-thumb wow zoomIn animated" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-6.jpg" alt=""/>
-                    <figcaption>
-                        <p class="pro-txt text-hed-2 pro-hed-text"> DESIGN & BRANDING <br/>
-                            <a href="/design-branding" class="btn motivate-link"> Ctrl+F5 your business </a></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 home-pro-thumb wow zoomIn animated" data-wow-delay=".9s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-4.jpg" alt=""/>
-                    <figcaption>
-                        <p class="pro-txt text-hed-2 pro-hed-text"> MOBILE APPLICATION <br/>
-                            <a href="/mobile-application" class="btn motivate-link"> Android & iOS </a></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 home-pro-thumb wow zoomIn animated" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                <figure class="effect-oscar"> <img src="themes/site_theme/images/motivate-5.jpg" alt=""/>
-                    <figcaption>
-                        <p class="pro-txt text-hed-2 pro-hed-text"> CREATIVE AGENCY <br/>
-                            <a href="/creative-agency" class="btn motivate-link"> ADs, Animations, Videos,<br> Banners we do it all..! </a></p>
-                    </figcaption>
-                </figure>
-            </div>
         </div>
+    
+     <div class="container-fluid category-webdesign">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <img src="themes/site_theme/images/work-category.png" alt="">
+            <div class="">
+              <div class="category-section">
+                <h5>Web design</h5>
+                <p>Being one of the finest web design company in Madurai, we help in creating stunning websites that breathe life! We have a great obsession for crafting high-end web designs since we believe in constantly upgrading our approaches to offer neoteric designs.</p>
+              </div>
+              <div class="category-section">
+                <h5>DIGITAL MARKETING</h5>
+                <p>Jujubee Media, is one of the best digital marketing company in Madurai which creates digital marketing campaigns spanning a vaster viewer attention and eternal imprints in the minds of the target audiences. Our digital marketing maestros possess solid expertise in rendering competent advertising and marketing strategies in the digital space. </p>
+              </div>
+              <div class="category-section">
+                <h5>DESIGN & BRANDING</h5>
+                <p>Our competencies in this domain include uncovering, anticipation & outlining, identity analysis, layout, colour patterns, brand digitalization, Feasibility study, Brand dispatch and much more. Get in touch with us; one of the best design and branding company in Madurai to give a sheen to your brand name!</p>
+              </div>
+              <div class="category-section">
+                <h5>MOBILE APPLICATION  </h5>
+                <p>We at Jujubee Media; a premium mobile application development company in Madurai, do everything from Application Ideation to extensive Maintenance of Apps in Play Stores. Pure ideas, creative solutions, on time client interaction, proven track records are the pillars of our continual success and the core of our ethics which has earned us a valuable global clientele.</p>
+              </div>
+              <div class="category-section">
+                <h5>CREATIVE AGENCY</h5>
+                <p>A high-end creative agency in Madurai which builds fashionable graphic designs that help organizations to streamline overwhelming magnitude of information and transform them into effective digital businesses. We think, evaluate and sketch enumerated designs that transform your core ideas into something real and appealing!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </section>
 
 
@@ -176,47 +174,6 @@ $this->title = 'Jujubee Media';
     </div>
 </section>
 
-
-<!--    <section class="section-testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
-
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pt-10" >
-            <p class="about-us-head">TESTIMONIALS</p>
-            <h2 class="about-head2 mt-4">Check out what our clients have to<br/>Say about us!</h2>
-            <div id="Testimonial" class="owl-carousel owl-theme slider-project">
-            <div class="item " >
-              <img src="themes/site_theme/images/colon.png" >
-                <p class="Testimonial-reviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="item ">
-              <img src="themes/site_theme/images/colon.png" >
-                <p class="Testimonial-reviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="item">
-             <img src="themes/site_theme/images/colon.png" >
-                <p class="Testimonial-reviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-
 <section class="Technologies">
     <div class="container">
       <div class="row">
@@ -259,14 +216,23 @@ $this->title = 'Jujubee Media';
 
 <section class="section-contact">
     <div class="container">
-        <h3 class="txt-contact">Get in touch today, for a free digital marketing plan!</h3>
-        <div class="row contact-row">
+        <h3 class="txt-contact">Get started instantly!</h3>
+<!--        <div class="row contact-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mob-display">
                 <span><img src="themes/site_theme/images/contact-message.png" ></span><span class="contact-details"><a href="mailto:info@jujubeemedia.com" style="color: #222222">info@jujubeemedia.com</a></span>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mob-display">
                 <span><img src="themes/site_theme/images/contact-call.png" ></span><span class="contact-details">+91 99528 70443 </span>
             </div>
+        </div>-->
+        <div class="row contact-row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                <div class="input-group">
+                   <span class="input-group-btn footer-requestQuote">
+                       <button class="btn btn-request" type="submit"><a href="/contactus" style="color:black">Request a quote</a></button>
+                   </span>
+                </div>
+              </div>
         </div>
     </div>
 </section>

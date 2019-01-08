@@ -97,7 +97,15 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="footer-submenu1">
-        <span>Copyright @ 2018 jujubee media. All rights reserved. | Digital Marketing Agency 
+        <span>
+        <ul class="list-unstyled list-inline social text-center mob-footer-icons menu-contact">
+                  <li class="list-inline-item "><a href="https://www.facebook.com/jujubeemedia" target="1"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
+                <li class="list-inline-item "><a href="https://twitter.com/jujubeemedia" target="1"><i class="fa fa-twitter icon-footer-mob"></i></a></li>
+                <li class="list-inline-item "><a href="https://www.linkedin.com/company/14402872/" target="1"><i class="fa fa-linkedin icon-footer-mob"></i></a></li>
+                <li class="list-inline-item "><a href="https://plus.google.com/u/0/b/106177774632969723573/" target="1"><i class="fa fa-google-plus icon-footer-mob"></i></a></li>
+                <!--<li class="list-inline-item "><a href="#"><i class="fa fa-instagram icon-footer-mob"></i></a></li>-->
+              </ul>
+        Powered by <a href="https://www.sumanastech.com/" target="_1">Sumanas Technologies | Website Development Company in India</a>
             <!--<a href="/terms">Terms & conditions apply</a>-->
         </span>
     </div>

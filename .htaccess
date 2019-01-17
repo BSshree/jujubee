@@ -14,13 +14,13 @@ IndexIgnore /
   RewriteEngine on
 
   # SSL redirect
-  #RewriteCond %{HTTPS} off
-  #RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # WWW redirect
   #RewriteCond %{HTTP_HOST} !^www\.
   #RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-  RewriteRule ^(blog)($|/) - [L]
+  #RewriteRule ^(blog)($|/) - [L]
 
   RewriteCond %{REQUEST_URI} !^public
   RewriteRule ^webpanel(/.+)?$ backend/web/$1 [L,PT]

@@ -50,30 +50,14 @@ use yii\widgets\ActiveForm;
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3  Address-info">
-                <h4 class="mob-hed-center font-pop">Quick Contact</h4>
-                 <form id="contactusform"  name="contactusform" class="formValidate" method="post" action="">
-                    <div class="form-group">
-                         <input type="text" id="con-name" name="name" class="form-control input-box" placeholder="Name*">
-                    </div>
-                    <div class="form-group">
-                         <input type="number" id="con-phone" name="phone" class="form-control input-box"  placeholder="Phone*">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="con-email" name="email" class="form-control input-box"  placeholder="Email*">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control input-box" id="con-mess" name="mess" placeholder="Message" rows="3"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <input type="submit" id="request-submit" name="submit" class="btn btn-warning btn-submit" value="SUBMIT" >
-                    </div>
-                     <div class="form-group request-show" style="display:none">
-                             <div class="form-group " >
-                                 <br><p id="successrequest"> </p>  
-                             </div>
-                             <div class="loading-image"><img src="themes/site_theme/images/re.gif" width="8%" height="8%" alt=""> </div>
-                        </div>
-                </form>
+                <h4 class="mob-hed-center font-pop">Digital Marketing</h4>
+                <ul>
+                <li><a href="/search-engine-optimization">SEO Services</a></li>
+                <li><a href="/pay-per-click">PPC Services</a></li>
+                <li><a href="/social-media-marketing">Social Media Marketing</a></li>
+                <li><a href="/content-marketing">Content Marketing Services</a></li>
+                <li><a href="/email-marketing">Email Marketing Services</a></li>
+                </ul>
             </div>
         </div>
     </div>

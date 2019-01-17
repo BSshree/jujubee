@@ -66,14 +66,14 @@ header.header-cont img {
 	transition: max-height .5s;
 }
 .section-banner {
-	background: url(../images/bg-background.jpg) no-repeat;
+	background: url(../images/bg-background1.jpg) no-repeat;
 	background-size: cover;
 	background-position: right;
 }
-.banner-branding{
+/* .banner-branding{
         background: url(../images/design-branding.jpg) no-repeat !important; 
         background-size: cover !important;
-}
+} */
 .slider-text {
 	margin-top: 18rem;
 	margin-bottom: 13rem;
@@ -2185,6 +2185,20 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-box-shadow: 0 6px 18px 0 rgba(0,24,78,.12);
     box-shadow: 0 6px 18px 0 rgba(0,24,78,.12);
 }
+.readmorebuttons{
+	height: 40px;
+	width: 100px;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #f19b37 , #f6ba3f);
+    -webkit-box-shadow: 0 6px 18px 0 rgba(0,24,78,.12);
+    box-shadow: 0 6px 18px 0 rgba(0,24,78,.12);
+}
 .contact-row input{
 	border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -2202,4 +2216,159 @@ input[type=number]::-webkit-outer-spin-button {
 	border-radius: 20px;
 	-webkit-box-shadow: 0 12px 30px 0 rgba(0,24,78,.24);
     box-shadow: 0 12px 30px 0 rgba(0,24,78,.24);
+}
+
+.Our-Strategies{
+	width: 100%;
+	float: left;
+	margin-bottom: 2%;
+}
+.seo-digital h5{
+	font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
+.seo-digital{
+	margin-bottom: 5%;
+}
+.strategies h6{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.coalition-technologies{
+	text-align: center;
+    padding: 2rem;
+    -webkit-box-shadow: 0 6px 18px 0 rgba(0,24,78,.12);
+    box-shadow: 0 6px 18px 0 rgba(0,24,78,.12);
+    height: 100%;
+}
+.coalition-technologies h5{
+	font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.coalition-technologies img{
+	margin-bottom: 20px;
+}
+.mar-services{
+	margin-top: 30px;
+}
+
+.search-optimzation{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+.search-content{
+	margin-top: 100px;
+}
+.how-do-we{
+	width: 100%;
+	float: left;
+	margin-bottom: 3%;
+}
+.service-web h5{
+	letter-spacing: 1px;
+    color: rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.how-do-we h5{
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0 25px 0;
+    font-weight: 600;
+    text-align: center;
+}
+.exploration-strategies{
+	margin-top: 30px;
+}
+.exploration-strategies h6{
+	font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.delve-deep{
+    padding: 1.5rem;
+    border: 1px solid #e6e6e6;
+    height: 100%;
+}
+.delve-deep p{
+	text-align: justify;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.delve-deep img{
+	margin-bottom: 20px;
+	width: 80px;
+}
+.brand-recognition{
+	width: 100%;
+	float: left;
+	margin-bottom: 3%;
+}
+.brand-content{
+	margin-top: 40px;
+}
+.brand-content h6{
+	font-size: 28px;
+    font-weight: 600;
+}
+.publishing-mar-top{
+	margin-top: 30px;
+}
+.email-marketing{
+	width: 100%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.email-marketing h2{
+	font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0 25px 0;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.email-marketing-services{
+    margin-top: 50px;
+}
+.banner-email-marketing{
+	background: url(../images/email-marketing-services.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.banner-social-media{
+	background: url(../images/social-media-marketing.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-content-marketing{
+	background: url(../images/content-marketing.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.intution-strategies{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+.strategy-email-marketing{
+	margin-top: 30px;
+}
+.strategy-email-marketing h6{
+	font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.strategy-email-marketing img{
+	float: left;
+    margin-right: 20px;
+    margin-top: 10px;
 }

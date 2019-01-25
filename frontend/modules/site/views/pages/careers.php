@@ -86,28 +86,23 @@ use yii\widgets\ActiveForm;
             <p>- Build and maintain working relationships with team members, vendors, and other departments involved in the projects.</p>
         </div>
     </div>
-    <div id="business-content">
+    <div id="android-content">
         <div class="modal-content">
             <h3> We are on the lookout for…. </h3>
-            <p>- Business Analyst with good experience in handling teams and projects in web and mobile development.</p>
-            <strong>Job Responsibilities :</strong>
-            <p>- Leading Multiple Project Teams</p>
-            <p>- Responsible for Project Delivery</p>
-            <p>- Training Teams</p>
-            <p>- Leading and Motivating Team Members</p>
-            <p>- Experience in Managing IT Projects.</p>
-            <p>- Have in depth knowledge of programming skills.</p>
-            <p>- Experience in Web or Mobile apps development would be preferred (we work extensively in PHP/MySQL)</p>
+            <p>- Must have <b> 2 – 4 </b> years of hands-on experience in Native Android Application Development.</p>
+            <p>- Must be extremely proficient in working with Android Studio and latest versions of Android OS.</p>
+            <p>- Experience with the Android SDK, Java, NDK, C++ is a must. Experience with JSON concepts and REST APIs is mandatory.</p>
+            <p>- Must have extensive experience in developing robust and competent Android Applications. </p>
 
-            <strong>Desired Candidate Profile:</strong>
+            <strong>Main Tasks and Responsibilities</strong>
 
-            <p>- Should possess excellent verbal & written communication skills</p>
-            <p>- Should be a leader</p>
-            <p>- Can-do attitude</p>
-            <p>- Negotiation Skills, Problem Solving attitude</p>
-            <p>- Capable of handling multiple responsibilities independently</p>
-            <p>- A go-getter & a leader</p>
-            <p>- A dynamic person with a drive to achieve numbers and lead their team</p>
+            <p>- Design and build exceptional applications for the Android platform.</p>
+            <p>- Collaborate with cross-functional teams to define, design, and ship new innovations.</p>
+            <p>- Work with outside data sources and APIs.</p>
+            <p>- Unit-test code for robustness, including edge cases, usability, and overall reliability.</p>
+            <p>- Work on bug fixing and enhancing application performance.</p>
+            <p>- Continuously discover, evaluate, and implement new technologies to maximize development efficiency.</p>
+            <p>- Must have the ability to work in a dynamic, fast moving and growing environment.</p>
         </div>
     </div>
     <div id="fullstack-content">
@@ -253,11 +248,11 @@ use yii\widgets\ActiveForm;
                 <!--<h3>PHP DEVELOPERS</h3>-->
                 <div class="row mar-career">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 postion-hed" >
-                        <h5>Business Development Executive</h5>
+                        <h5>Andriod Developer</h5>
                         <p>Full time - Madurai</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                        <button type="button" class="btn btn-warning btn-apply" data-toggle="modal" data-target="#careerModal" data-designation="business" data-title="Business Development Executive">Apply Now</button>
+                        <button type="button" class="btn btn-warning btn-apply" data-toggle="modal" data-target="#careerModal" data-designation="android" data-title="Android Developer">Apply Now</button>
                     </div>
                 </div>
                 <div class="row mar-career">

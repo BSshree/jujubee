@@ -23,7 +23,7 @@ use yii\bootstrap\Modal;
               <!--<a href="#" class="header-menu menu-contact">Jujubee@gmail.com</a>-->
               <p class="header-menu menu-contact">+91 99528 70443</p>
               <ul class="list-unstyled list-inline social text-center mob-footer-icons menu-contact">
-                  <li class="list-inline-item "><a href="https://www.facebook.com/jujubeemedia" target="1"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
+                  <li class="list-inline-item "><a href="https://www.facebook.com/jujubeemediamadurai" target="1"><i class="fa fa-facebook icon-footer-mob"></i></a></li>
                 <li class="list-inline-item "><a href="https://twitter.com/jujubeemedia" target="1"><i class="fa fa-twitter icon-footer-mob"></i></a></li>
                 <li class="list-inline-item "><a href="https://www.linkedin.com/company/14402872/" target="1"><i class="fa fa-linkedin icon-footer-mob"></i></a></li>
                 <li class="list-inline-item "><a href="https://plus.google.com/u/0/b/106177774632969723573/" target="1"><i class="fa fa-google-plus icon-footer-mob"></i></a></li>
